@@ -37,7 +37,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "No roaming",
+    "roaming": "60GB EU roaming",
     "contractType": "24-month",
     "extras": [
       "5G"
@@ -62,7 +62,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "No roaming",
+    "roaming": "35GB EU roaming",
     "contractType": "12-month",
     "extras": [
       "5G"
@@ -87,7 +87,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "No roaming",
+    "roaming": "60GB EU roaming",
     "contractType": "24-month",
     "extras": [
       "5G"
@@ -112,7 +112,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "No roaming",
+    "roaming": "60GB EU roaming",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -181,13 +181,13 @@
     "priceEur": 15,
     "promoPrice": 12.99,
     "promoNote": "Limited time offer",
-    "dataGB": 0,
-    "dataDisplay": "Unknown",
+    "dataGB": 9999,
+    "dataDisplay": "Unlimited",
     "minutes": "Unlimited",
     "sms": "Unlimited",
-    "is5G": false,
-    "isUnlimited": false,
-    "roaming": "No roaming",
+    "is5G": true,
+    "isUnlimited": true,
+    "roaming": "EU roaming included",
     "contractType": "12-month",
     "extras": [],
     "url": "https://www.sky.com/ie/shop/mobile/plans/",
@@ -195,7 +195,7 @@
     "hasPromo": true,
     "freeMonth": false,
     "forLife": false,
-    "unlimitedCalls": false
+    "unlimitedCalls": true
   },
   {
     "carrier": "skymobile",
@@ -208,9 +208,9 @@
     "dataDisplay": "10GB",
     "minutes": "Unlimited",
     "sms": "Unlimited",
-    "is5G": false,
+    "is5G": true,
     "isUnlimited": false,
-    "roaming": "No roaming",
+    "roaming": "EU roaming included",
     "contractType": "12-month",
     "extras": [],
     "url": "https://www.sky.com/ie/shop/mobile/plans/",
@@ -218,7 +218,7 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
-    "unlimitedCalls": false
+    "unlimitedCalls": true
   },
   {
     "carrier": "tescomobile",
