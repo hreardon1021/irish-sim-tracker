@@ -14,7 +14,9 @@ const CARRIER_COLORS = {
 
 const eff = (p) => p.promoPrice ?? p.priceEur;
 
-const isESIM   = (p) => /esim|e-sim/i.test(p.name);
+const isESIM = (p) => /esim|e-sim/i.test(p.name);
+
+const ESIM_CARRIERS = new Set(['vodafone', 'three', 'eir', 'gomo', 'skymobile']);
 
 // ── Insight bullet helper ─────────────────────────────────────
 function Insight({ icon, children }) {
@@ -261,6 +263,7 @@ export default function SummaryView({ plans }) {
                     {/* Feature badges */}
                     <td className="sum-td sum-td-features">
                       {plan.is5G && <span className="deck-5g-badge">5G</span>}
+                      {ESIM_CARRIERS.has(plan.carrier) && <span className="deck-esim-badge">eSIM</span>}
                       {plan.roaming !== 'No roaming' && (
                         <span className="deck-roam-badge">EU roaming</span>
                       )}
