@@ -1,13 +1,9 @@
-// Carriers that support eSIM in Ireland
+// Carriers that support eSIM in Ireland (network owners only — MVNOs generally do not)
+// Sources: Apple IE support page, esimireland.com — Three, Vodafone, eir confirmed
 const ESIM_CARRIERS = new Set([
   'vodafone',
   'three',
   'eir',
-  'gomo',
-  'skymobile',
-  'tescomobile',
-  'clearmobile',
-  'virginmedia',
 ]);
 
 // Extras already covered by dedicated badges/specs — don't show twice
