@@ -376,7 +376,7 @@
     "sms": "Unlimited",
     "is5G": false,
     "isUnlimited": true,
-    "roaming": "No roaming",
+    "roaming": "37GB EU roaming",
     "contractType": "12-month",
     "extras": [],
     "url": "https://www.virginmedia.ie/mobile/sim-only/",
@@ -384,6 +384,6 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": true,
-    "unlimitedCalls": false
+    "unlimitedCalls": true
   }
 ]
