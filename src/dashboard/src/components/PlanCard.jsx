@@ -1,5 +1,22 @@
+// Carriers that support eSIM in Ireland
+const ESIM_CARRIERS = new Set([
+  'vodafone',
+  'three',
+  'eir',
+  'gomo',
+  'skymobile',
+  'tescomobile',
+  'clearmobile',
+  'virginmedia',
+]);
+
+// Extras already covered by dedicated badges/specs — don't show twice
+const SKIP_EXTRAS = new Set(['5G', 'EU Roaming', 'EU roaming']);
+
 export default function PlanCard({ plan, isBestValue }) {
   const effectivePrice = plan.promoPrice ?? plan.priceEur;
+  const hasEsim = ESIM_CARRIERS.has(plan.carrier);
+  const filteredExtras = plan.extras?.filter((e) => !SKIP_EXTRAS.has(e)) ?? [];
 
   return (
     <div className={`plan-card${isBestValue ? ' best-value' : ''}`}>
@@ -60,12 +77,13 @@ export default function PlanCard({ plan, isBestValue }) {
       <div className="plan-badges">
         {plan.bundleRequired && <span className="badge bundle">Bundle</span>}
         {plan.is5G && <span className="badge purple">5G</span>}
+        {hasEsim && <span className="badge blue">eSIM</span>}
         {plan.freeMonth && <span className="badge green">Free month</span>}
         {plan.forLife && <span className="badge green">For life</span>}
         {plan.hasPromo && !plan.freeMonth && !plan.forLife && (
           <span className="badge amber">Promo</span>
         )}
-        {plan.extras?.slice(0, 2).map((extra) => (
+        {filteredExtras.slice(0, 2).map((extra) => (
           <span key={extra} className="badge blue">{extra}</span>
         ))}
       </div>
