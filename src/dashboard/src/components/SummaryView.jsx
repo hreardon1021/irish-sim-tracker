@@ -15,7 +15,6 @@ const CARRIER_COLORS = {
 const eff = (p) => p.promoPrice ?? p.priceEur;
 
 const isESIM   = (p) => /esim|e-sim/i.test(p.name);
-const isFully  = (p) => p.isUnlimited && p.minutes === 'Unlimited' && p.sms === 'Unlimited';
 
 // ── Insight bullet helper ─────────────────────────────────────
 function Insight({ icon, children }) {
@@ -30,20 +29,15 @@ function Insight({ icon, children }) {
 // ── Root component ────────────────────────────────────────────
 export default function SummaryView({ plans }) {
 
-  // ── Fully unlimited, non-eSIM plans, sorted by acquisition price ──
+  // ── All non-eSIM plans, sorted by acquisition price ──
   const qualified = useMemo(() =>
     plans
-      .filter((p) => isFully(p) && !isESIM(p))
+      .filter((p) => !isESIM(p))
       .sort((a, b) => eff(a) - eff(b)),
     [plans]
   );
 
-  // ── Plans excluded and why (for footnote transparency) ───────
-  const excluded = useMemo(() =>
-    plans.filter((p) => isESIM(p) || !isFully(p)),
-    [plans]
-  );
-  const esimCount   = plans.filter(isESIM).length;
+  const esimCount = plans.filter(isESIM).length;
 
   // ── Aggregate stats ───────────────────────────────────────────
   const stats = useMemo(() => {
@@ -108,10 +102,10 @@ export default function SummaryView({ plans }) {
       {/* ── Page header ─────────────────────────────────── */}
       <div className="sum-page-header">
         <div>
-          <h2 className="sum-page-title">📊 Unlimited Plans — Market Summary</h2>
+          <h2 className="sum-page-title">📊 All Plans — Market Summary</h2>
           <p className="sum-page-sub">
-            Unlimited calls, texts &amp; data · Physical SIM only (eSIM excluded) ·{' '}
-            <strong>{stats.total}</strong> qualifying plans across{' '}
+            Physical SIM only (eSIM excluded) ·{' '}
+            <strong>{stats.total}</strong> plans across{' '}
             <strong>{stats.carrierCount}</strong> carriers
           </p>
         </div>
@@ -177,7 +171,7 @@ export default function SummaryView({ plans }) {
       {/* ── Main comparison table ─────────────────────── */}
       <div className="sum-table-section">
         <div className="sum-table-hdr">
-          <h3 className="sum-table-title">All Unlimited Plans — Ranked by Acquisition Price</h3>
+          <h3 className="sum-table-title">All Plans — Ranked by Acquisition Price</h3>
           <p className="sum-table-sub">
             Sorted by what a new customer pays today · hover rows for detail
           </p>
@@ -189,6 +183,7 @@ export default function SummaryView({ plans }) {
                 <th className="sum-th sum-th-rank">#</th>
                 <th className="sum-th">Network</th>
                 <th className="sum-th">Plan</th>
+                <th className="sum-th">Data</th>
                 <th className="sum-th sum-th-price">Acq. Price</th>
                 <th className="sum-th sum-th-price">Standard Price</th>
                 <th className="sum-th">Contract</th>
@@ -225,6 +220,13 @@ export default function SummaryView({ plans }) {
                     <td className="sum-td sum-td-name">
                       <span className="sum-plan-name">{plan.name}</span>
                       {isVM && <span className="sum-vm-pill">VM</span>}
+                    </td>
+
+                    {/* Data */}
+                    <td className="sum-td sum-td-data">
+                      <span className={plan.isUnlimited ? 'sum-data-unlimited' : 'sum-data-capped'}>
+                        {plan.dataDisplay}
+                      </span>
                     </td>
 
                     {/* Acquisition price */}
@@ -333,12 +335,12 @@ export default function SummaryView({ plans }) {
       </div>
 
       {/* ── Excluded plans note ──────────────────────────── */}
-      <div className="sum-excluded-note">
-        <strong>Not shown:</strong>{' '}
-        {esimCount > 0 && `${esimCount} eSIM plan${esimCount > 1 ? 's' : ''} excluded. `}
-        Plans with capped or unconfirmed data (GoMo 23GB, Clear Mobile, Sky Mobile, Tesco 95GB &amp; 5GB)
-        do not qualify as fully unlimited and are available on the Cards / Table tabs.
-      </div>
+      {esimCount > 0 && (
+        <div className="sum-excluded-note">
+          <strong>Not shown:</strong>{' '}
+          {esimCount} eSIM plan{esimCount > 1 ? 's' : ''} excluded — available on the SIM / Table tabs.
+        </div>
+      )}
 
     </div>
   );
