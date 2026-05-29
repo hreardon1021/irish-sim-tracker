@@ -131,13 +131,13 @@
     "priceEur": 14.99,
     "promoPrice": null,
     "promoNote": "Price for life",
-    "dataGB": 23,
-    "dataDisplay": "23GB",
+    "dataGB": 9999,
+    "dataDisplay": "Unlimited",
     "minutes": "Unlimited",
     "sms": "Unlimited",
     "is5G": true,
-    "isUnlimited": false,
-    "roaming": "EU roaming included",
+    "isUnlimited": true,
+    "roaming": "23GB EU roaming",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -147,7 +147,7 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": true,
-    "unlimitedCalls": false
+    "unlimitedCalls": true
   },
   {
     "carrier": "clearmobile",
