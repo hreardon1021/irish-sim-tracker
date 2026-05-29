@@ -12,6 +12,7 @@ import SummaryView from './components/SummaryView.jsx';
 import DevicesView from './components/DevicesView.jsx';
 import DeviceDeckView from './components/DeviceDeckView.jsx';
 import ThemeSwitcher from './components/ThemeSwitcher.jsx';
+import AlertsBanner from './components/AlertsBanner.jsx';
 import { exportPlansExcel } from './utils/exportExcel.js';
 
 const DEFAULT_FILTERS = {
@@ -30,7 +31,7 @@ const SORT_OPTIONS = [
   { value: 'contract-asc', label: 'Contract Length' },
 ];
 
-const VIEWS = ['Summary', 'Cards', 'Table', 'Insights', 'Charts', 'Deck', 'Devices', 'Dev.Deck'];
+const VIEWS = ['Summary', 'SIM', 'Table', 'Insights', 'Charts', 'Deck', 'Devices', 'Dev.Deck'];
 
 const TIME_RANGES = [
   { value: 'week',    label: 'Wk',  days: 7  },
@@ -41,6 +42,7 @@ const TIME_RANGES = [
 
 export default function App() {
   const [plans, setPlans] = useState([]);
+  const [alerts, setAlerts] = useState([]);
   const [history, setHistory] = useState([]);
   const [devices, setDevices] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -50,7 +52,7 @@ export default function App() {
   const [sort, setSort] = useState('price-asc');
   const [view, setView] = useState('Summary');
   const [theme, setThemeState] = useState(
-    () => localStorage.getItem('sim-tracker-theme') || 'default'
+    () => localStorage.getItem('sim-tracker-theme') || 'terminal-red'
   );
   const [timeRange, setTimeRange] = useState('all');
 
@@ -92,6 +94,11 @@ export default function App() {
     fetch(`${base}data/devices.json`)
       .then((r) => r.json())
       .then((data) => setDevices(data))
+      .catch(() => {});
+
+    fetch(`${base}data/alerts.json`)
+      .then((r) => r.json())
+      .then((data) => setAlerts(data))
       .catch(() => {});
   }, []);
 
@@ -218,7 +225,7 @@ export default function App() {
       <header className="app-header">
         <div className="header-inner">
           <div>
-            <h1>📱 Irish SIM Tracker</h1>
+            <h1>📱 Mobile Tracker</h1>
             <p className="header-subtitle">SIM-only bill pay plans across 7 Irish networks</p>
           </div>
           <div className="header-right">
@@ -235,6 +242,8 @@ export default function App() {
       <main className="app-main">
         <MetricCards metrics={metrics} />
 
+        <AlertsBanner alerts={alerts} />
+
         <FilterPanel
           filters={filters}
           onToggle={toggleFilter}
@@ -249,7 +258,7 @@ export default function App() {
                 ? `${devices.length} device deal${devices.length !== 1 ? 's' : ''}`
                 : view === 'Dev.Deck'
                 ? `${devices.length} device entries · ${[...new Set(devices.map(d => d.device))].length} models`
-                : view === 'Deck'
+                : view === 'Deck' || view === 'SIM'
                 ? `${plans.length} plans · ${plans.filter(p => p.carrier !== 'virginmedia').length} competitors`
                 : `${filtered.length} plan${filtered.length !== 1 ? 's' : ''}${activeFilterCount > 0 ? ` (filtered from ${plans.length})` : ''}`
               }
@@ -303,7 +312,7 @@ export default function App() {
           </div>
         </div>
 
-        {view === 'Cards' && (
+        {view === 'SIM' && (
           <>
             {/* Price history line chart — grows as scraper runs daily */}
             <section className="chart-section cards-history-section">

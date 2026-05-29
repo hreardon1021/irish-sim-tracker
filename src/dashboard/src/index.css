@@ -37,6 +37,50 @@
   }
 }
 
+/* ── Terminal Red (always dark, red accent, monospace font) ─── */
+[data-theme="terminal-red"] {
+  color-scheme: dark;
+  --bg:          #0d0d0d;
+  --surface:     #161616;
+  --surface2:    #1e1e1e;
+  --border:      #2a2a2a;
+  --text:        #f0f0f0;
+  --text-muted:  #737373;
+  --accent:      #e63535;
+  --accent-light:#1c0606;
+  --shadow:      0 1px 4px rgba(0,0,0,0.7), 0 4px 20px rgba(230,53,53,0.06);
+}
+/* force dark even when OS is in light mode */
+@media (prefers-color-scheme: light) {
+  [data-theme="terminal-red"] {
+    --bg:          #0d0d0d;
+    --surface:     #161616;
+    --surface2:    #1e1e1e;
+    --border:      #2a2a2a;
+    --text:        #f0f0f0;
+    --text-muted:  #737373;
+    --accent:      #e63535;
+    --accent-light:#1c0606;
+    --shadow:      0 1px 4px rgba(0,0,0,0.7), 0 4px 20px rgba(230,53,53,0.06);
+  }
+}
+/* Apply JetBrains Mono font for the terminal theme */
+[data-theme="terminal-red"] body {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+}
+/* Badge dark overrides for terminal theme */
+[data-theme="terminal-red"] .badge.green  { background: #0a2a1a; color: #4ade80; border-color: #166534; }
+[data-theme="terminal-red"] .badge.bundle { background: #0a2a1a; color: #4ade80; border-color: #166534; }
+[data-theme="terminal-red"] .plan-bundle-note { background: #0a2a1a; color: #4ade80; border-color: #166534; }
+[data-theme="terminal-red"] .badge.blue   { background: #0a1a2a; color: #60a5fa; border-color: #1d4ed8; }
+[data-theme="terminal-red"] .badge.amber  { background: #2a1a00; color: #fbbf24; border-color: #92400e; }
+[data-theme="terminal-red"] .badge.purple { background: #1a0a2a; color: #c4b5fd; border-color: #5b21b6; }
+[data-theme="terminal-red"] .acq-tag-green { background: #0a2a1a; border-color: #166534; color: #4ade80; }
+[data-theme="terminal-red"] .sum-badge-life { background: #0a2a1a; border-color: #166534; color: #4ade80; }
+[data-theme="terminal-red"] .deck-roam-badge { background: #0a2a1a; color: #4ade80; }
+
 /* ── VM Brand (light + dark-adaptive, red accent) ───────────── */
 [data-theme="vm-brand"] {
   --bg: #f6f5f5;
@@ -151,7 +195,13 @@
 
 /* ── Dark-mode badge colours (apply to all always-dark themes) ─ */
 [data-theme="dark-analytics"] .badge.green,
-[data-theme="midnight"] .badge.green {
+[data-theme="dark-analytics"] .badge.bundle,
+[data-theme="midnight"] .badge.green,
+[data-theme="midnight"] .badge.bundle {
+  background: #064e3b; color: #6ee7b7; border-color: #065f46;
+}
+[data-theme="dark-analytics"] .plan-bundle-note,
+[data-theme="midnight"] .plan-bundle-note {
   background: #064e3b; color: #6ee7b7; border-color: #065f46;
 }
 [data-theme="dark-analytics"] .badge.blue,

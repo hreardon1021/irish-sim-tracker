@@ -1,9 +1,15 @@
 const THEMES = [
   {
+    id: 'terminal-red',
+    label: 'Terminal',
+    title: 'Terminal Red — pure dark, red accent, monospace font',
+    swatchStyle: { background: '#161616', border: '1.5px solid #2a2a2a' },
+    dot: '#e63535',
+  },
+  {
     id: 'default',
     label: 'Auto',
     title: 'Auto — follows your OS light / dark setting',
-    // split swatch: light left, dark right
     swatchStyle: {
       background: 'linear-gradient(135deg, #f5f5f7 50%, #1a1a28 50%)',
       border: '1.5px solid #c0c0cc',
