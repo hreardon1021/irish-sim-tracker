@@ -99,6 +99,164 @@
   margin-top: 0.25rem;
 }
 
+/* ── Alerts Banner ──────────────────────────────────────────── */
+.alerts-banner {
+  background: var(--surface);
+  border: 1.5px solid #ca8a04;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px rgba(202,138,4,0.1), var(--shadow);
+  overflow: hidden;
+}
+
+.alerts-banner-hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  gap: 0.5rem;
+}
+.alerts-banner-hdr:hover { background: rgba(202,138,4,0.05); }
+
+.alerts-banner-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ca8a04;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.alerts-bell { font-size: 0.9rem; }
+
+.alerts-count-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: #ca8a04;
+  color: #fff;
+  line-height: 1;
+}
+
+.alerts-chevron { font-size: 0.65rem; color: #ca8a04; }
+
+.alerts-list {
+  list-style: none;
+  border-top: 1px solid rgba(202,138,4,0.2);
+}
+
+.alert-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.alert-row:last-child { border-bottom: none; }
+.alert-row:hover { background: var(--surface2); }
+
+.alert-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.alert-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.alert-carrier {
+  font-weight: 700;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.alert-plan {
+  font-size: 0.82rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.alert-price-change {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.alert-drop { background: #dcfce7; color: #166534; }
+.alert-rise { background: #fee2e2; color: #991b1b; }
+
+.alert-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.alert-type-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.alert-type-price_drop { background: #dcfce7; color: #166534; }
+.alert-type-price_rise { background: #fee2e2; color: #991b1b; }
+.alert-type-new_plan   { background: #dbeafe; color: #1e40af; }
+.alert-type-removed    { background: #f3f4f6; color: #4b5563; }
+
+.alert-dismiss {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  line-height: 1;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+.alert-dismiss:hover { opacity: 1; color: #dc2626; background: #fee2e2; }
+
+/* Dark theme overrides */
+[data-theme="terminal-red"] .alert-drop,
+[data-theme="dark-analytics"] .alert-drop,
+[data-theme="midnight"] .alert-drop { background: #0a2a1a; color: #4ade80; }
+[data-theme="terminal-red"] .alert-rise,
+[data-theme="dark-analytics"] .alert-rise,
+[data-theme="midnight"] .alert-rise { background: #2a0a0a; color: #f87171; }
+[data-theme="terminal-red"] .alert-type-price_drop,
+[data-theme="dark-analytics"] .alert-type-price_drop,
+[data-theme="midnight"] .alert-type-price_drop { background: #0a2a1a; color: #4ade80; }
+[data-theme="terminal-red"] .alert-type-price_rise,
+[data-theme="dark-analytics"] .alert-type-price_rise,
+[data-theme="midnight"] .alert-type-price_rise { background: #2a0a0a; color: #f87171; }
+[data-theme="terminal-red"] .alert-type-new_plan,
+[data-theme="dark-analytics"] .alert-type-new_plan,
+[data-theme="midnight"] .alert-type-new_plan { background: #0a1a2a; color: #60a5fa; }
+
 /* ── Filter Panel ───────────────────────────────────────────── */
 .filter-panel {
   background: var(--surface);
@@ -1098,12 +1256,18 @@
   right: 0.75rem;
   background: var(--accent);
   color: #fff;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  padding: 0.2rem 0.5rem;
+  padding: 0.18rem 0.45rem;
   border-radius: 99px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+/* Stop plan name text sliding under the badge */
+.plan-card.best-value .plan-card-header {
+  padding-right: 5.5rem;
 }
 
 .carrier-accent {
@@ -1226,10 +1390,23 @@
   border: 1px solid var(--border);
   color: var(--text-muted);
 }
-.badge.green { background: #d1fae5; color: #065f46; border-color: #a7f3d0; }
-.badge.blue  { background: #dbeafe; color: #1e40af; border-color: #bfdbfe; }
-.badge.amber { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+.badge.green  { background: #d1fae5; color: #065f46; border-color: #a7f3d0; }
+.badge.blue   { background: #dbeafe; color: #1e40af; border-color: #bfdbfe; }
+.badge.amber  { background: #fef3c7; color: #92400e; border-color: #fde68a; }
 .badge.purple { background: #ede9fe; color: #5b21b6; border-color: #ddd6fe; }
+.badge.bundle { background: #ecfdf5; color: #065f46; border-color: #6ee7b7; }
+
+/* Bundle offer note (shown below price on bundled plans) */
+.plan-bundle-note {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #059669;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  margin-top: -0.25rem;
+}
 
 @media (prefers-color-scheme: dark) {
   .badge.green  { background: #064e3b; color: #6ee7b7; border-color: #065f46; }
@@ -1992,6 +2169,15 @@
   color: var(--text-muted);
   margin-top: 0.1rem;
 }
+.device-upfront-free {
+  color: #16a34a;
+  font-weight: 600;
+}
+[data-theme="terminal-red"] .device-upfront-free,
+[data-theme="dark-analytics"] .device-upfront-free,
+[data-theme="midnight"] .device-upfront-free {
+  color: #4ade80;
+}
 
 /* Sky 24-month split pricing */
 .sky-split-pricing {
@@ -2037,6 +2223,13 @@
 }
 .sky-split-row-phase2 .sky-split-price {
   color: #0072c6;
+}
+
+/* SIM + device price breakdown note (shown when SIM is billed separately) */
+.device-sim-breakdown {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: -0.3rem;
 }
 
 /* Device extras line */
@@ -2406,3 +2599,218 @@
 
 /* Eir carrier colour token */
 .carrier-eir { color: #4a1942; }
+
+/* ── Filter dropdown bar (Devices tab) ──────────────────────── */
+.filter-dropdown-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.filter-dd-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.filter-dd-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.filter-select {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.82rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface2);
+  color: var(--text);
+  cursor: pointer;
+  min-width: 110px;
+  transition: border-color 0.12s;
+}
+.filter-select:focus { outline: none; border-color: var(--accent); }
+.filter-select-active { border-color: var(--accent); color: var(--accent); }
+
+.filter-dd-clear {
+  align-self: flex-end;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+.filter-dd-clear:hover { border-color: #dc2626; color: #dc2626; }
+
+/* Multi-select dropdown */
+.multidd-wrap {
+  position: relative;
+}
+
+.multidd-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.82rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface2);
+  color: var(--text);
+  cursor: pointer;
+  min-width: 110px;
+  transition: border-color 0.12s;
+  white-space: nowrap;
+}
+.multidd-btn:focus { outline: none; }
+.multidd-btn-active { border-color: var(--accent); }
+
+.multidd-btn-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  display: none; /* label is in .filter-dd-label above */
+}
+
+.multidd-btn-value {
+  flex: 1;
+  text-align: left;
+  color: var(--text);
+  font-size: 0.82rem;
+}
+.multidd-btn-active .multidd-btn-value { color: var(--accent); }
+
+.multidd-chevron {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.multidd-panel {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 50;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  min-width: 180px;
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 0.35rem 0;
+}
+
+.multidd-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0.25rem 0;
+}
+
+.multidd-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.82rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.multidd-option:hover { background: var(--surface2); }
+.multidd-option input[type="checkbox"] { accent-color: var(--accent); }
+.multidd-option-checked { color: var(--accent); font-weight: 600; }
+
+/* ── Device card — info specs ──────────────────────────────── */
+.device-info-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.6rem;
+  background: var(--surface2);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.device-spec-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.device-spec-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.device-spec-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: right;
+}
+
+/* Stock badges */
+.device-stock-in {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.device-stock-out {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #dc2626;
+}
+
+/* vs VM comparison */
+.device-vs-vm-less {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #16a34a;
+  text-align: right;
+}
+
+.device-vs-vm-more {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #dc2626;
+  text-align: right;
+}
+
+.device-vs-vm-same {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.device-vs-vm-baseline {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #cc0000;
+  text-align: right;
+}

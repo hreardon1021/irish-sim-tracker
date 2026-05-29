@@ -64,5 +64,5 @@ export function exportPlansExcel(plans, history = [], label = 'Plans') {
   }
 
   const ts = new Date().toISOString().slice(0, 10);
-  XLSX.writeFile(wb, `irish-sim-tracker-${ts}.xlsx`);
+  XLSX.writeFile(wb, `mobile-tracker-${ts}.xlsx`);
 }

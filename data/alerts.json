@@ -1,0 +1,13 @@
+[
+  {
+    "id": "sky-sim-promo-may2026",
+    "carrier": "skymobile",
+    "carrierDisplay": "Sky Mobile",
+    "type": "price_drop",
+    "planName": "Unlimited Plan",
+    "oldPrice": 15,
+    "newPrice": 12.99,
+    "note": "Promo ends 3rd June — returns to €15/mo",
+    "date": "2026-05-29"
+  }
+]

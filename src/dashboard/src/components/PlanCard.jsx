@@ -51,7 +51,14 @@ export default function PlanCard({ plan, isBestValue }) {
         </div>
       )}
 
+      {plan.bundleRequired && (
+        <div className="plan-bundle-note">
+          🔗 {plan.bundleRequired}
+        </div>
+      )}
+
       <div className="plan-badges">
+        {plan.bundleRequired && <span className="badge bundle">Bundle</span>}
         {plan.is5G && <span className="badge purple">5G</span>}
         {plan.freeMonth && <span className="badge green">Free month</span>}
         {plan.forLife && <span className="badge green">For life</span>}

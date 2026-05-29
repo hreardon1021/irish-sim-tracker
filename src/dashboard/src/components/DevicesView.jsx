@@ -17,7 +17,16 @@ const BRAND_ICONS = {
   Google:  '🔍',
 };
 
-const effD = (d) => d.promoPrice ?? d.monthlyPrice;
+// Carriers that bill the SIM plan as a SEPARATE monthly charge on top of the device payment.
+// All other carriers quote an all-in monthly price (device + SIM combined).
+const SKY_SIM_PROMO_ENDS = new Date('2026-06-04'); // promo €12.99 valid through June 3rd
+const SIM_MONTHLY = {
+  virginmedia: 15,                                          // €15/mo Customer Unlimited
+  skymobile:   new Date() < SKY_SIM_PROMO_ENDS ? 12.99 : 15, // €12.99 promo → €15 from Jun 4
+};
+
+// Returns the effective COMBINED monthly price (device + SIM) used for sorting & comparison.
+const effD = (d) => (d.promoPrice ?? d.monthlyPrice) + (SIM_MONTHLY[d.carrier] || 0);
 
 // ── Multi-select dropdown (Device filter) ─────────────────────
 function MultiSelectDropdown({ label, options, selected, onChange }) {
@@ -77,15 +86,20 @@ function MultiSelectDropdown({ label, options, selected, onChange }) {
 }
 
 // ── Single device card ────────────────────────────────────────
-function DeviceCard({ device }) {
+function DeviceCard({ device, vmTotal }) {
   const color      = CARRIER_COLORS[device.carrier] || '#888';
   const isVM       = device.carrier === 'virginmedia';
-  const effPrice   = effD(device);
+  const simFee     = SIM_MONTHLY[device.carrier] || 0;  // separate SIM charge for this carrier
+  const effPrice   = effD(device);                       // combined monthly (device + SIM)
   const isSkySplit = device.carrier === 'skymobile' && device.skyPhase2Monthly != null;
 
+  // 24-month total always uses the real combined monthly cost
   const total24 = isSkySplit
-    ? device.monthlyPrice * 12 + device.skyPhase2Monthly * 12 + device.upfront
-    : effPrice * device.contractMonths + device.upfront;
+    ? (device.monthlyPrice + simFee) * 12 + (device.skyPhase2Monthly + simFee) * 12 + (device.upfront || 0)
+    : effPrice * device.contractMonths + (device.upfront || 0);
+
+  // Positive = this deal costs more than VM; negative = cheaper than VM
+  const vmDiff = (!isVM && vmTotal != null) ? total24 - vmTotal : null;
 
   return (
     <div className={`plan-card device-card${isVM ? ' device-card-vm' : ''}`}>
@@ -116,11 +130,11 @@ function DeviceCard({ device }) {
           <div className="sky-split-heading">24-month pricing breakdown</div>
           <div className="sky-split-row">
             <span className="sky-split-period">Months 1–12</span>
-            <span className="sky-split-price">€{device.monthlyPrice.toFixed(2)}<span className="sky-split-unit">/mo</span></span>
+            <span className="sky-split-price">€{(device.monthlyPrice + simFee).toFixed(2)}<span className="sky-split-unit">/mo</span></span>
           </div>
           <div className="sky-split-row sky-split-row-phase2">
             <span className="sky-split-period">Months 13–24</span>
-            <span className="sky-split-price">€{device.skyPhase2Monthly.toFixed(2)}<span className="sky-split-unit">/mo</span></span>
+            <span className="sky-split-price">€{(device.skyPhase2Monthly + simFee).toFixed(2)}<span className="sky-split-unit">/mo</span></span>
           </div>
         </div>
       ) : (
@@ -130,36 +144,53 @@ function DeviceCard({ device }) {
           </span>
           <span className="plan-price-period">/mo</span>
           {device.hasPromo && (
-            <span className="plan-promo-price">€{device.monthlyPrice.toFixed(2)}</span>
+            <span className="plan-promo-price">€{(device.monthlyPrice + simFee).toFixed(2)}</span>
           )}
         </div>
       )}
       {device.hasPromo && device.promoNote && (
         <div className="plan-promo-note">{device.promoNote}</div>
       )}
-
-      {/* Upfront */}
-      {device.upfront > 0 && (
-        <div className="device-upfront">+ €{device.upfront} upfront</div>
+      {simFee > 0 && (
+        <div className="device-sim-breakdown">
+          €{(effPrice - simFee).toFixed(0)} device + €{simFee} SIM plan/mo
+        </div>
       )}
 
-      {/* Included plan */}
-      <div className="plan-specs" style={{ marginTop: '0.25rem' }}>
-        <div className="plan-spec">
-          <span className="spec-label">Data</span>
-          <span className="spec-value">{device.planData}</span>
+      {/* Upfront */}
+      <div className={`device-upfront${!device.upfront ? ' device-upfront-free' : ''}`}>
+        {device.upfront > 0 ? `+ €${device.upfront} upfront` : '✓ Free upfront'}
+      </div>
+
+      {/* Info specs */}
+      <div className="device-info-specs">
+        <div className="device-spec-row">
+          <span className="device-spec-label">SIM Plan</span>
+          <span className="device-spec-value">{device.planName || device.planData}</span>
         </div>
-        <div className="plan-spec">
-          <span className="spec-label">Calls</span>
-          <span className="spec-value">{device.planMinutes}</span>
+        <div className="device-spec-row">
+          <span className="device-spec-label">Availability</span>
+          <span className={device.inStock !== false ? 'device-stock-in' : 'device-stock-out'}>
+            {device.inStock !== false ? '✓ In Stock' : '✗ Out of Stock'}
+          </span>
         </div>
-        <div className="plan-spec">
-          <span className="spec-label">Texts</span>
-          <span className="spec-value">{device.planSMS}</span>
+        <div className="device-spec-row">
+          <span className="device-spec-label">SIM + Device / mo</span>
+          <span className="device-spec-value">€{effPrice.toFixed(2)}</span>
         </div>
-        <div className="plan-spec">
-          <span className="spec-label">24-mo total</span>
-          <span className="spec-value">€{total24.toFixed(0)}</span>
+        <div className="device-spec-row">
+          <span className="device-spec-label">vs Virgin Media</span>
+          {isVM ? (
+            <span className="device-vs-vm-baseline">VM Baseline</span>
+          ) : vmDiff === null ? (
+            <span className="device-vs-vm-baseline">No VM deal</span>
+          ) : vmDiff < -0.49 ? (
+            <span className="device-vs-vm-less">€{Math.abs(vmDiff).toFixed(0)} cheaper (24mo)</span>
+          ) : vmDiff > 0.49 ? (
+            <span className="device-vs-vm-more">€{vmDiff.toFixed(0)} more (24mo)</span>
+          ) : (
+            <span className="device-vs-vm-same">Same as VM</span>
+          )}
         </div>
       </div>
 
@@ -231,6 +262,20 @@ export default function DevicesView({ devices }) {
       const key = `${d.device}|${d.storage}`;
       if (map[key] == null || effD(d) < map[key]) map[key] = effD(d);
     });
+    return map;
+  }, [devices]);
+
+  // 24-month total for Virgin Media (combined: device + SIM), keyed by device|storage
+  const vmTotalMap = useMemo(() => {
+    const map = {};
+    devices
+      .filter((d) => d.carrier === 'virginmedia')
+      .forEach((d) => {
+        const key = `${d.device}|${d.storage}`;
+        // effD already includes the VM SIM fee so this is the true 24-month cost
+        const total = effD(d) * d.contractMonths + (d.upfront || 0);
+        if (map[key] == null || total < map[key]) map[key] = total;
+      });
     return map;
   }, [devices]);
 
@@ -342,6 +387,7 @@ export default function DevicesView({ devices }) {
               key={`${d.carrier}-${d.device}-${d.storage}-${i}`}
               device={d}
               bestPrice={bestByDevice[`${d.device}|${d.storage}`]}
+              vmTotal={vmTotalMap[`${d.device}|${d.storage}`]}
             />
           ))}
         </div>
