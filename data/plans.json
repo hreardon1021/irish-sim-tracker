@@ -162,7 +162,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "No roaming",
+    "roaming": "23GB EU roaming",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -172,7 +172,7 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
-    "unlimitedCalls": false
+    "unlimitedCalls": true
   },
   {
     "carrier": "skymobile",
@@ -233,7 +233,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "EU roaming included",
+    "roaming": "36.95GB EU roaming",
     "contractType": "12-month",
     "extras": [
       "5G"
@@ -258,7 +258,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": false,
-    "roaming": "EU roaming included",
+    "roaming": "36.95GB EU roaming",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -283,7 +283,7 @@
     "sms": "150",
     "is5G": false,
     "isUnlimited": false,
-    "roaming": "No roaming",
+    "roaming": "5GB EU roaming",
     "contractType": "30-day rolling",
     "extras": [],
     "url": "https://www.tescomobile.ie/sim-only-plans",
