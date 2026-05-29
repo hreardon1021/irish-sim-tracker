@@ -1,0 +1,20 @@
+{
+  "name": "irish-sim-tracker",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tracks SIM-only bill pay plans from 7 Irish mobile networks daily",
+  "scripts": {
+    "start": "node src/scraper.js",
+    "notify": "node src/notifier.js",
+    "check": "node src/scraper.js && node src/notifier.js",
+    "dev": "npm --prefix src/dashboard run dev",
+    "build": "npm --prefix src/dashboard run build",
+    "install:dashboard": "npm --prefix src/dashboard install"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

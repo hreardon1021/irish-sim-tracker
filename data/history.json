@@ -1,0 +1,165 @@
+[
+  {
+    "timestamp": "2026-05-28T13:08:35.029Z",
+    "planCount": 13,
+    "summary": {
+      "added": 0,
+      "removed": 0,
+      "changed": 0
+    },
+    "carrierPrices": {
+      "vodafone": 20,
+      "three": 14,
+      "gomo": 14.99,
+      "clearmobile": 12.99,
+      "skymobile": 10,
+      "tescomobile": 10,
+      "virginmedia": 15,
+      "eir": 14.99
+    }
+  },
+  {
+    "timestamp": "2026-05-28T12:42:01.720Z",
+    "planCount": 13,
+    "summary": {
+      "added": 0,
+      "removed": 0,
+      "changed": 1
+    }
+  },
+  {
+    "timestamp": "2026-05-28T11:03:17.283Z",
+    "planCount": 13,
+    "summary": {
+      "added": 0,
+      "removed": 0,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T10:23:33.791Z",
+    "planCount": 13,
+    "summary": {
+      "added": 0,
+      "removed": 0,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:26:54.226Z",
+    "planCount": 13,
+    "summary": {
+      "added": 1,
+      "removed": 2,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:23:39.411Z",
+    "planCount": 15,
+    "summary": {
+      "added": 0,
+      "removed": 1,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:20:54.030Z",
+    "planCount": 16,
+    "summary": {
+      "added": 3,
+      "removed": 1,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:17:06.515Z",
+    "planCount": 13,
+    "summary": {
+      "added": 1,
+      "removed": 2,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:14:20.171Z",
+    "planCount": 14,
+    "summary": {
+      "added": 0,
+      "removed": 0,
+      "changed": 2
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:11:46.393Z",
+    "planCount": 14,
+    "summary": {
+      "added": 0,
+      "removed": 0,
+      "changed": 2
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:03:35.206Z",
+    "planCount": 14,
+    "summary": {
+      "added": 2,
+      "removed": 1,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T09:00:30.533Z",
+    "planCount": 13,
+    "summary": {
+      "added": 2,
+      "removed": 3,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T08:58:07.986Z",
+    "planCount": 14,
+    "summary": {
+      "added": 0,
+      "removed": 2,
+      "changed": 1
+    }
+  },
+  {
+    "timestamp": "2026-05-28T08:56:13.931Z",
+    "planCount": 16,
+    "summary": {
+      "added": 1,
+      "removed": 3,
+      "changed": 1
+    }
+  },
+  {
+    "timestamp": "2026-05-28T08:52:26.883Z",
+    "planCount": 18,
+    "summary": {
+      "added": 5,
+      "removed": 7,
+      "changed": 2
+    }
+  },
+  {
+    "timestamp": "2026-05-28T08:49:52.285Z",
+    "planCount": 21,
+    "summary": {
+      "added": 20,
+      "removed": 23,
+      "changed": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-28T08:46:10.820Z",
+    "planCount": 31,
+    "summary": {
+      "added": 23,
+      "removed": 0,
+      "changed": 0
+    }
+  }
+]
