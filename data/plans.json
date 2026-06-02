@@ -37,7 +37,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "60GB EU roaming",
+    "roaming": "No roaming",
     "contractType": "24-month",
     "extras": [
       "5G"
@@ -62,7 +62,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "35GB EU roaming",
+    "roaming": "No roaming",
     "contractType": "12-month",
     "extras": [
       "5G"
@@ -87,7 +87,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "60GB EU roaming",
+    "roaming": "No roaming",
     "contractType": "24-month",
     "extras": [
       "5G"
@@ -112,7 +112,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "60GB EU roaming",
+    "roaming": "No roaming",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -131,13 +131,13 @@
     "priceEur": 14.99,
     "promoPrice": null,
     "promoNote": "Price for life",
-    "dataGB": 9999,
-    "dataDisplay": "Unlimited",
+    "dataGB": 23,
+    "dataDisplay": "23GB",
     "minutes": "Unlimited",
     "sms": "Unlimited",
     "is5G": true,
-    "isUnlimited": true,
-    "roaming": "23GB EU roaming",
+    "isUnlimited": false,
+    "roaming": "EU roaming included",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -147,7 +147,7 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": true,
-    "unlimitedCalls": true
+    "unlimitedCalls": false
   },
   {
     "carrier": "clearmobile",
@@ -156,13 +156,13 @@
     "priceEur": 12.99,
     "promoPrice": null,
     "promoNote": null,
-    "dataGB": 9999,
-    "dataDisplay": "Unlimited",
+    "dataGB": 0,
+    "dataDisplay": "Unknown",
     "minutes": "Unlimited",
     "sms": "Unlimited",
     "is5G": true,
-    "isUnlimited": true,
-    "roaming": "23GB EU roaming",
+    "isUnlimited": false,
+    "roaming": "No roaming",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -172,22 +172,22 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
-    "unlimitedCalls": true
+    "unlimitedCalls": false
   },
   {
     "carrier": "skymobile",
     "carrierDisplay": "Sky Mobile",
     "name": "Unlimited Plan",
     "priceEur": 15,
-    "promoPrice": 12.99,
+    "promoPrice": 12,
     "promoNote": "Limited time offer",
-    "dataGB": 9999,
-    "dataDisplay": "Unlimited",
+    "dataGB": 0,
+    "dataDisplay": "Unknown",
     "minutes": "Unlimited",
     "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": true,
-    "roaming": "EU roaming included",
+    "is5G": false,
+    "isUnlimited": false,
+    "roaming": "No roaming",
     "contractType": "12-month",
     "extras": [],
     "url": "https://www.sky.com/ie/shop/mobile/plans/",
@@ -195,7 +195,7 @@
     "hasPromo": true,
     "freeMonth": false,
     "forLife": false,
-    "unlimitedCalls": true
+    "unlimitedCalls": false
   },
   {
     "carrier": "skymobile",
@@ -208,9 +208,9 @@
     "dataDisplay": "10GB",
     "minutes": "Unlimited",
     "sms": "Unlimited",
-    "is5G": true,
+    "is5G": false,
     "isUnlimited": false,
-    "roaming": "EU roaming included",
+    "roaming": "No roaming",
     "contractType": "12-month",
     "extras": [],
     "url": "https://www.sky.com/ie/shop/mobile/plans/",
@@ -218,7 +218,7 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
-    "unlimitedCalls": true
+    "unlimitedCalls": false
   },
   {
     "carrier": "tescomobile",
@@ -233,7 +233,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": true,
-    "roaming": "36.95GB EU roaming",
+    "roaming": "EU roaming included",
     "contractType": "12-month",
     "extras": [
       "5G"
@@ -258,7 +258,7 @@
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": false,
-    "roaming": "36.95GB EU roaming",
+    "roaming": "EU roaming included",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
@@ -283,7 +283,7 @@
     "sms": "150",
     "is5G": false,
     "isUnlimited": false,
-    "roaming": "5GB EU roaming",
+    "roaming": "No roaming",
     "contractType": "30-day rolling",
     "extras": [],
     "url": "https://www.tescomobile.ie/sim-only-plans",
@@ -294,79 +294,9 @@
     "unlimitedCalls": false
   },
   {
-    "carrier": "eir",
-    "carrierDisplay": "eir",
-    "name": "Mobile + Broadband Bundle",
-    "priceEur": 9.99,
-    "promoPrice": null,
-    "promoNote": null,
-    "dataGB": 9999,
-    "dataDisplay": "Unlimited",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": true,
-    "roaming": "EU roaming included",
-    "contractType": "30-day rolling",
-    "extras": ["5G", "EU Roaming"],
-    "url": "https://www.eir.ie/shop/mobile",
-    "network": "eir",
-    "hasPromo": false,
-    "freeMonth": false,
-    "forLife": false,
-    "unlimitedCalls": true,
-    "bundleRequired": "Requires eir broadband"
-  },
-  {
-    "carrier": "eir",
-    "carrierDisplay": "eir",
-    "name": "eir mobile Connect",
-    "priceEur": 29.99,
-    "promoPrice": 14.99,
-    "promoNote": "First 12 months",
-    "dataGB": 9999,
-    "dataDisplay": "Unlimited",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": true,
-    "roaming": "EU roaming included",
-    "contractType": "30-day rolling",
-    "extras": ["5G", "EU Roaming"],
-    "url": "https://www.eir.ie/shop/mobile",
-    "network": "eir",
-    "hasPromo": true,
-    "freeMonth": false,
-    "forLife": false,
-    "unlimitedCalls": true
-  },
-  {
-    "carrier": "eir",
-    "carrierDisplay": "eir",
-    "name": "eir mobile Complete",
-    "priceEur": 34.99,
-    "promoPrice": 24.99,
-    "promoNote": "First 12 months",
-    "dataGB": 9999,
-    "dataDisplay": "Unlimited",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": true,
-    "roaming": "EU roaming included",
-    "contractType": "30-day rolling",
-    "extras": ["5G", "EU Roaming"],
-    "url": "https://www.eir.ie/shop/mobile",
-    "network": "eir",
-    "hasPromo": true,
-    "freeMonth": false,
-    "forLife": false,
-    "unlimitedCalls": true
-  },
-  {
     "carrier": "virginmedia",
     "carrierDisplay": "Virgin Media Mobile",
-    "name": "Unlimited SIM",
+    "name": "SIM Only Deal - a Month For Life!",
     "priceEur": 15,
     "promoPrice": null,
     "promoNote": "Price for life",
@@ -376,7 +306,7 @@
     "sms": "Unlimited",
     "is5G": false,
     "isUnlimited": true,
-    "roaming": "37GB EU roaming",
+    "roaming": "No roaming",
     "contractType": "12-month",
     "extras": [],
     "url": "https://www.virginmedia.ie/mobile/sim-only/",
@@ -384,6 +314,6 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": true,
-    "unlimitedCalls": true
+    "unlimitedCalls": false
   }
 ]
