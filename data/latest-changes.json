@@ -1,42 +1,43 @@
 {
-  "timestamp": "2026-06-02T09:10:45.100Z",
+  "timestamp": "2026-06-03T12:29:55.974Z",
   "hasChanges": true,
   "summary": {
-    "added": 1,
-    "removed": 4,
-    "changed": 11
+    "added": 0,
+    "removed": 5,
+    "changed": 0
   },
-  "added": [
+  "added": [],
+  "removed": [
     {
-      "carrier": "virginmedia",
-      "carrierDisplay": "Virgin Media Mobile",
-      "name": "SIM Only Deal - a Month For Life!",
-      "priceEur": 15,
-      "promoPrice": null,
-      "promoNote": "Price for life",
+      "carrier": "three",
+      "carrierDisplay": "Three",
+      "name": "INSTANT ESIM ACCESS",
+      "priceEur": 34.99,
+      "promoPrice": 14,
+      "promoNote": "for 6 months",
       "dataGB": 9999,
       "dataDisplay": "Unlimited",
       "minutes": "Unlimited",
       "sms": "Unlimited",
-      "is5G": false,
+      "is5G": true,
       "isUnlimited": true,
       "roaming": "No roaming",
-      "contractType": "12-month",
-      "extras": [],
-      "url": "https://www.virginmedia.ie/mobile/sim-only/",
+      "contractType": "24-month",
+      "extras": [
+        "5G"
+      ],
+      "url": "https://www.three.ie/deals/sim-only.html",
       "network": "Three",
-      "hasPromo": false,
+      "hasPromo": true,
       "freeMonth": false,
-      "forLife": true,
-      "unlimitedCalls": false
-    }
-  ],
-  "removed": [
+      "forLife": false,
+      "unlimitedCalls": true
+    },
     {
-      "carrier": "eir",
-      "carrierDisplay": "eir",
-      "name": "Mobile + Broadband Bundle",
-      "priceEur": 9.99,
+      "carrier": "three",
+      "carrierDisplay": "Three",
+      "name": "Three SIM Core",
+      "priceEur": 20,
       "promoPrice": null,
       "promoNote": null,
       "dataGB": 9999,
@@ -45,477 +46,93 @@
       "sms": "Unlimited",
       "is5G": true,
       "isUnlimited": true,
-      "roaming": "EU roaming included",
-      "contractType": "30-day rolling",
+      "roaming": "No roaming",
+      "contractType": "12-month",
       "extras": [
-        "5G",
-        "EU Roaming"
+        "5G"
       ],
-      "url": "https://www.eir.ie/shop/mobile",
-      "network": "eir",
+      "url": "https://www.three.ie/deals/sim-only.html",
+      "network": "Three",
       "hasPromo": false,
       "freeMonth": false,
       "forLife": false,
-      "unlimitedCalls": true,
-      "bundleRequired": "Requires eir broadband"
+      "unlimitedCalls": true
     },
     {
-      "carrier": "eir",
-      "carrierDisplay": "eir",
-      "name": "eir mobile Connect",
-      "priceEur": 29.99,
-      "promoPrice": 14.99,
-      "promoNote": "First 12 months",
+      "carrier": "three",
+      "carrierDisplay": "Three",
+      "name": "Unlimited 5G Deal",
+      "priceEur": 28,
+      "promoPrice": 14,
+      "promoNote": "for 6 months",
       "dataGB": 9999,
       "dataDisplay": "Unlimited",
       "minutes": "Unlimited",
       "sms": "Unlimited",
       "is5G": true,
       "isUnlimited": true,
-      "roaming": "EU roaming included",
-      "contractType": "30-day rolling",
+      "roaming": "No roaming",
+      "contractType": "24-month",
       "extras": [
-        "5G",
-        "EU Roaming"
+        "5G"
       ],
-      "url": "https://www.eir.ie/shop/mobile",
-      "network": "eir",
+      "url": "https://www.three.ie/deals/sim-only.html",
+      "network": "Three",
       "hasPromo": true,
       "freeMonth": false,
       "forLife": false,
       "unlimitedCalls": true
     },
     {
-      "carrier": "eir",
-      "carrierDisplay": "eir",
-      "name": "eir mobile Complete",
+      "carrier": "three",
+      "carrierDisplay": "Three",
+      "name": "Three SIM Flex 5G",
       "priceEur": 34.99,
-      "promoPrice": 24.99,
-      "promoNote": "First 12 months",
+      "promoPrice": null,
+      "promoNote": null,
       "dataGB": 9999,
       "dataDisplay": "Unlimited",
       "minutes": "Unlimited",
       "sms": "Unlimited",
       "is5G": true,
       "isUnlimited": true,
-      "roaming": "EU roaming included",
+      "roaming": "No roaming",
       "contractType": "30-day rolling",
       "extras": [
-        "5G",
-        "EU Roaming"
+        "5G"
       ],
-      "url": "https://www.eir.ie/shop/mobile",
-      "network": "eir",
-      "hasPromo": true,
+      "url": "https://www.three.ie/deals/sim-only.html",
+      "network": "Three",
+      "hasPromo": false,
       "freeMonth": false,
       "forLife": false,
       "unlimitedCalls": true
     },
     {
-      "carrier": "virginmedia",
-      "carrierDisplay": "Virgin Media Mobile",
-      "name": "Unlimited SIM",
-      "priceEur": 15,
+      "carrier": "gomo",
+      "carrierDisplay": "GoMo",
+      "name": "GoMo Mobile",
+      "priceEur": 14.99,
       "promoPrice": null,
       "promoNote": "Price for life",
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
+      "dataGB": 23,
+      "dataDisplay": "23GB",
       "minutes": "Unlimited",
       "sms": "Unlimited",
-      "is5G": false,
-      "isUnlimited": true,
-      "roaming": "37GB EU roaming",
-      "contractType": "12-month",
-      "extras": [],
-      "url": "https://www.virginmedia.ie/mobile/sim-only/",
+      "is5G": true,
+      "isUnlimited": false,
+      "roaming": "EU roaming included",
+      "contractType": "30-day rolling",
+      "extras": [
+        "5G"
+      ],
+      "url": "https://shop.gomo.ie/mobile-sim-only",
       "network": "Three",
       "hasPromo": false,
       "freeMonth": false,
       "forLife": true,
-      "unlimitedCalls": true
+      "unlimitedCalls": false
     }
   ],
-  "changed": [
-    {
-      "plan": {
-        "carrier": "three",
-        "carrierDisplay": "Three",
-        "name": "INSTANT ESIM ACCESS",
-        "priceEur": 34.99,
-        "promoPrice": 14,
-        "promoNote": "for 6 months",
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": true,
-        "roaming": "No roaming",
-        "contractType": "24-month",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.three.ie/deals/sim-only.html",
-        "network": "Three",
-        "hasPromo": true,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": true
-      },
-      "diffs": {
-        "roaming": {
-          "from": "60GB EU roaming",
-          "to": "No roaming"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "three",
-        "carrierDisplay": "Three",
-        "name": "Three SIM Core",
-        "priceEur": 20,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": true,
-        "roaming": "No roaming",
-        "contractType": "12-month",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.three.ie/deals/sim-only.html",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": true
-      },
-      "diffs": {
-        "roaming": {
-          "from": "35GB EU roaming",
-          "to": "No roaming"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "three",
-        "carrierDisplay": "Three",
-        "name": "Unlimited 5G Deal",
-        "priceEur": 28,
-        "promoPrice": 14,
-        "promoNote": "for 6 months",
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": true,
-        "roaming": "No roaming",
-        "contractType": "24-month",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.three.ie/deals/sim-only.html",
-        "network": "Three",
-        "hasPromo": true,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": true
-      },
-      "diffs": {
-        "roaming": {
-          "from": "60GB EU roaming",
-          "to": "No roaming"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "three",
-        "carrierDisplay": "Three",
-        "name": "Three SIM Flex 5G",
-        "priceEur": 34.99,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": true,
-        "roaming": "No roaming",
-        "contractType": "30-day rolling",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.three.ie/deals/sim-only.html",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": true
-      },
-      "diffs": {
-        "roaming": {
-          "from": "60GB EU roaming",
-          "to": "No roaming"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "gomo",
-        "carrierDisplay": "GoMo",
-        "name": "GoMo Mobile",
-        "priceEur": 14.99,
-        "promoPrice": null,
-        "promoNote": "Price for life",
-        "dataGB": 23,
-        "dataDisplay": "23GB",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": false,
-        "roaming": "EU roaming included",
-        "contractType": "30-day rolling",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://shop.gomo.ie/mobile-sim-only",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": true,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "dataGB": {
-          "from": 9999,
-          "to": 23
-        },
-        "roaming": {
-          "from": "23GB EU roaming",
-          "to": "EU roaming included"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "clearmobile",
-        "carrierDisplay": "Clear Mobile",
-        "name": "€12.99/mo Plan",
-        "priceEur": 12.99,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 0,
-        "dataDisplay": "Unknown",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": false,
-        "roaming": "No roaming",
-        "contractType": "30-day rolling",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.clearmobile.ie/",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "dataGB": {
-          "from": 9999,
-          "to": 0
-        },
-        "roaming": {
-          "from": "23GB EU roaming",
-          "to": "No roaming"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "skymobile",
-        "carrierDisplay": "Sky Mobile",
-        "name": "Unlimited Plan",
-        "priceEur": 15,
-        "promoPrice": 12,
-        "promoNote": "Limited time offer",
-        "dataGB": 0,
-        "dataDisplay": "Unknown",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": false,
-        "isUnlimited": false,
-        "roaming": "No roaming",
-        "contractType": "12-month",
-        "extras": [],
-        "url": "https://www.sky.com/ie/shop/mobile/plans/",
-        "network": "Vodafone",
-        "hasPromo": true,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "promoPrice": {
-          "from": 12.99,
-          "to": 12
-        },
-        "dataGB": {
-          "from": 9999,
-          "to": 0
-        },
-        "is5G": {
-          "from": true,
-          "to": false
-        },
-        "roaming": {
-          "from": "EU roaming included",
-          "to": "No roaming"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "skymobile",
-        "carrierDisplay": "Sky Mobile",
-        "name": "10GB Plan",
-        "priceEur": 10,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 10,
-        "dataDisplay": "10GB",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": false,
-        "isUnlimited": false,
-        "roaming": "No roaming",
-        "contractType": "12-month",
-        "extras": [],
-        "url": "https://www.sky.com/ie/shop/mobile/plans/",
-        "network": "Vodafone",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "is5G": {
-          "from": true,
-          "to": false
-        },
-        "roaming": {
-          "from": "EU roaming included",
-          "to": "No roaming"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "tescomobile",
-        "carrierDisplay": "Tesco Mobile",
-        "name": "Bill Pay SIM Only plans",
-        "priceEur": 30,
-        "promoPrice": 10,
-        "promoNote": "for first 6 months",
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": true,
-        "roaming": "EU roaming included",
-        "contractType": "12-month",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.tescomobile.ie/sim-only-plans",
-        "network": "Three",
-        "hasPromo": true,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": true
-      },
-      "diffs": {
-        "roaming": {
-          "from": "36.95GB EU roaming",
-          "to": "EU roaming included"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "tescomobile",
-        "carrierDisplay": "Tesco Mobile",
-        "name": "5G Clubcard SIM",
-        "priceEur": 20,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 95,
-        "dataDisplay": "95GB",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": false,
-        "roaming": "EU roaming included",
-        "contractType": "30-day rolling",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.tescomobile.ie/sim-only-plans",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "roaming": {
-          "from": "36.95GB EU roaming",
-          "to": "EU roaming included"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "tescomobile",
-        "carrierDisplay": "Tesco Mobile",
-        "name": "SIM Only",
-        "priceEur": 10,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 5,
-        "dataDisplay": "5GB",
-        "minutes": "150",
-        "sms": "150",
-        "is5G": false,
-        "isUnlimited": false,
-        "roaming": "No roaming",
-        "contractType": "30-day rolling",
-        "extras": [],
-        "url": "https://www.tescomobile.ie/sim-only-plans",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "roaming": {
-          "from": "5GB EU roaming",
-          "to": "No roaming"
-        }
-      }
-    }
-  ]
+  "changed": []
 }
