@@ -1,5 +1,23 @@
 [
   {
+    "timestamp": "2026-06-03T20:06:24.039Z",
+    "planCount": 13,
+    "summary": {
+      "added": 5,
+      "removed": 0,
+      "changed": 0
+    },
+    "carrierPrices": {
+      "vodafone": 20,
+      "three": 14,
+      "gomo": 14.99,
+      "clearmobile": 12.99,
+      "skymobile": 10,
+      "tescomobile": 10,
+      "virginmedia": 15
+    }
+  },
+  {
     "timestamp": "2026-06-03T12:29:55.974Z",
     "planCount": 8,
     "summary": {
