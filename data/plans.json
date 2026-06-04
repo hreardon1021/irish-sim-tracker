@@ -27,7 +27,7 @@
   {
     "carrier": "three",
     "carrierDisplay": "Three",
-    "name": "INSTANT ESIM ACCESS",
+    "name": "A SIM only deal to get your claws into",
     "priceEur": 34.99,
     "promoPrice": 14,
     "promoNote": "for 6 months",
@@ -125,31 +125,6 @@
     "unlimitedCalls": true
   },
   {
-    "carrier": "gomo",
-    "carrierDisplay": "GoMo",
-    "name": "GoMo Mobile",
-    "priceEur": 14.99,
-    "promoPrice": null,
-    "promoNote": "Price for life",
-    "dataGB": 23,
-    "dataDisplay": "23GB",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": false,
-    "roaming": "EU roaming included",
-    "contractType": "30-day rolling",
-    "extras": [
-      "5G"
-    ],
-    "url": "https://shop.gomo.ie/mobile-sim-only",
-    "network": "Three",
-    "hasPromo": false,
-    "freeMonth": false,
-    "forLife": true,
-    "unlimitedCalls": false
-  },
-  {
     "carrier": "clearmobile",
     "carrierDisplay": "Clear Mobile",
     "name": "€12.99/mo Plan",
@@ -179,8 +154,8 @@
     "carrierDisplay": "Sky Mobile",
     "name": "Unlimited Plan",
     "priceEur": 15,
-    "promoPrice": 12,
-    "promoNote": "Limited time offer",
+    "promoPrice": null,
+    "promoNote": null,
     "dataGB": 0,
     "dataDisplay": "Unknown",
     "minutes": "Unlimited",
@@ -192,7 +167,7 @@
     "extras": [],
     "url": "https://www.sky.com/ie/shop/mobile/plans/",
     "network": "Vodafone",
-    "hasPromo": true,
+    "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": false
