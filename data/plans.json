@@ -27,7 +27,7 @@
   {
     "carrier": "three",
     "carrierDisplay": "Three",
-    "name": "A SIM only deal to get your claws into",
+    "name": "INSTANT ESIM ACCESS",
     "priceEur": 34.99,
     "promoPrice": 14,
     "promoNote": "for 6 months",
@@ -123,6 +123,31 @@
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": true
+  },
+  {
+    "carrier": "gomo",
+    "carrierDisplay": "GoMo",
+    "name": "GoMo Mobile",
+    "priceEur": 14.99,
+    "promoPrice": null,
+    "promoNote": "Price for life",
+    "dataGB": 23,
+    "dataDisplay": "23GB",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://shop.gomo.ie/mobile-sim-only",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": true,
+    "unlimitedCalls": false
   },
   {
     "carrier": "clearmobile",
