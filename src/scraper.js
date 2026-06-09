@@ -51,6 +51,13 @@ const CARRIERS = [
     url: 'https://www.virginmedia.ie/mobile/sim-only/',
     network: 'Three',
   },
+  {
+    carrier: 'eir',
+    carrierDisplay: 'eir',
+    url: 'https://www.eir.ie/mobile/simonly/',
+    network: 'eir',
+    extraWait: 3000,
+  },
 ];
 
 // Remove nav/header/footer/cookie banners so text is cleaner
