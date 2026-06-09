@@ -74,7 +74,7 @@ jobs:
           username: ${{ secrets.GMAIL_USERNAME }}
           password: ${{ secrets.GMAIL_APP_PASSWORD }}
           subject: "📱 Irish SIM Plan Change Detected"
-          to: ${{ secrets.GMAIL_USERNAME }}
+          to: ${{ secrets.ALERT_EMAIL }}
           from: Irish SIM Tracker
           body: |
             A change was detected in Irish SIM plans:
