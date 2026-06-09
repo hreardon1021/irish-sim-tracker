@@ -47,12 +47,41 @@ jobs:
             exit 1
           fi
 
-      - name: Notify on changes
+      - name: Build change summary
+        id: summary
         if: steps.scraper.outputs.exit_code == '2' || github.event.inputs.force_notify == 'true'
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          FORCE_NOTIFY: ${{ github.event.inputs.force_notify }}
-        run: node src/notifier.js
+        run: |
+          SUMMARY=$(node -e "
+            const fs = require('fs');
+            const r = JSON.parse(fs.readFileSync('data/latest-changes.json','utf8'));
+            const lines = [];
+            if (r.added.length)   lines.push('NEW: ' + r.added.map(p => p.carrierDisplay + ' ' + p.name + ' €' + (p.promoPrice ?? p.priceEur) + '/mo').join(', '));
+            if (r.removed.length) lines.push('REMOVED: ' + r.removed.map(p => p.carrierDisplay + ' ' + p.name).join(', '));
+            if (r.changed.length) lines.push('CHANGED: ' + r.changed.map(({plan,diffs}) => plan.carrierDisplay + ' ' + plan.name + ' (' + Object.entries(diffs).map(([k,{from,to}]) => k+': '+from+' -> '+to).join(', ') + ')').join('; '));
+            console.log(lines.join('\n'));
+          ")
+          echo "body<<EOF" >> $GITHUB_OUTPUT
+          echo "$SUMMARY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Send email alert
+        if: steps.scraper.outputs.exit_code == '2' || github.event.inputs.force_notify == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_USERNAME }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          subject: "📱 Irish SIM Plan Change Detected"
+          to: ${{ secrets.GMAIL_USERNAME }}
+          from: Irish SIM Tracker
+          body: |
+            A change was detected in Irish SIM plans:
+
+            ${{ steps.summary.outputs.body }}
+
+            View the full dashboard: https://hreardon1021.github.io/irish-sim-tracker/
 
       - name: Commit updated data files
         if: steps.scraper.outputs.exit_code == '2'
