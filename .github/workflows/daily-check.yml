@@ -66,22 +66,18 @@ jobs:
 
       - name: Send email alert
         if: steps.scraper.outputs.exit_code == '2' || github.event.inputs.force_notify == 'true'
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
-          username: ${{ secrets.GMAIL_USERNAME }}
-          password: ${{ secrets.GMAIL_APP_PASSWORD }}
-          subject: "📱 Irish SIM Plan Change Detected"
-          to: hannahr68@hotmail.com
-          from: Irish SIM Tracker
-          body: |
-            A change was detected in Irish SIM plans:
-
-            ${{ steps.summary.outputs.body }}
-
-            View the full dashboard: https://hreardon1021.github.io/irish-sim-tracker/
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          curl -s -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "from": "Irish SIM Tracker <onboarding@resend.dev>",
+              "to": "hannahr68@hotmail.com",
+              "subject": "📱 Irish SIM Plan Change Detected",
+              "text": "A change was detected in Irish SIM plans:\n\n${{ steps.summary.outputs.body }}\n\nView the dashboard: https://hreardon1021.github.io/irish-sim-tracker/"
+            }'
 
       - name: Commit updated data files
         if: steps.scraper.outputs.exit_code == '2'
