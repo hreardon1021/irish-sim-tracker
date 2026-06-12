@@ -11,6 +11,7 @@ import DeckView from './components/DeckView.jsx';
 import SummaryView from './components/SummaryView.jsx';
 import DevicesView from './components/DevicesView.jsx';
 import DeviceDeckView from './components/DeviceDeckView.jsx';
+import OfferRoadmap from './components/OfferRoadmap.jsx';
 import ThemeSwitcher from './components/ThemeSwitcher.jsx';
 import AlertsBanner from './components/AlertsBanner.jsx';
 import { exportPlansExcel } from './utils/exportExcel.js';
@@ -31,7 +32,7 @@ const SORT_OPTIONS = [
   { value: 'contract-asc', label: 'Contract Length' },
 ];
 
-const VIEWS = ['Summary', 'SIM', 'Table', 'Insights', 'Charts', 'Deck', 'Devices', 'Dev.Deck'];
+const VIEWS = ['Summary', 'SIM', 'Table', 'Insights', 'Charts', 'Deck', 'Roadmap', 'Devices', 'Dev.Deck'];
 
 const TIME_RANGES = [
   { value: 'week',    label: 'Wk',  days: 7  },
@@ -360,6 +361,10 @@ export default function App() {
 
         {view === 'Deck' && (
           <DeckView plans={plans} />
+        )}
+
+        {view === 'Roadmap' && (
+          <OfferRoadmap />
         )}
 
         {view === 'Devices' && (
