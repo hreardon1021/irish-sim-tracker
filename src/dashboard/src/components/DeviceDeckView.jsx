@@ -1,5 +1,6 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useRef } from 'react';
 import * as XLSX from 'xlsx';
+import html2canvas from 'html2canvas';
 
 const CARRIER_COLORS = {
   vodafone:    '#e60000',
@@ -51,7 +52,9 @@ export default function DeviceDeckView({ devices }) {
   const [filterBrand,   setFilterBrand]   = useState('All');
   // Multi-select: empty Set = show all
   const [filterDevices, setFilterDevices] = useState(new Set());
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied]   = useState(false);
+  const [imaging, setImaging] = useState(false);
+  const deckRef = useRef(null);
 
   const brands   = useMemo(() => ['All', ...new Set(devices.map((d) => d.brand))], [devices]);
   const devNames = useMemo(() => {
@@ -172,6 +175,24 @@ export default function DeviceDeckView({ devices }) {
       .catch(() => {});
   };
 
+  const handleImage = async () => {
+    if (!deckRef.current) return;
+    setImaging(true);
+    try {
+      const canvas = await html2canvas(deckRef.current, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#ffffff',
+      });
+      const link = document.createElement('a');
+      link.download = `vm-device-deck-${new Date().toISOString().slice(0, 10)}.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    } finally {
+      setImaging(false);
+    }
+  };
+
   if (!devices.length) {
     return (
       <div className="chart-empty">
@@ -181,7 +202,7 @@ export default function DeviceDeckView({ devices }) {
   }
 
   return (
-    <div className="deck-view">
+    <div className="deck-view" ref={deckRef}>
 
       {/* Toolbar */}
       <div className="deck-toolbar">
@@ -230,6 +251,9 @@ export default function DeviceDeckView({ devices }) {
             {copied ? '✓ Copied!' : '📋 Copy for deck'}
           </button>
           <button className="export-btn" onClick={handleExcel}>↓ Excel</button>
+          <button className="export-btn" onClick={handleImage} disabled={imaging}>
+            {imaging ? '...' : '↓ Image'}
+          </button>
         </div>
       </div>
 
