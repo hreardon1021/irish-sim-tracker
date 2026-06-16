@@ -2404,7 +2404,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--text-muted);
+  color: #ffffff;
   border-bottom: 2px solid var(--border);
   white-space: nowrap;
 }
