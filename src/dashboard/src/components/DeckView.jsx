@@ -1,6 +1,7 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import * as XLSX from 'xlsx';
 import { exportPlansExcel } from '../utils/exportExcel.js';
+import html2canvas from 'html2canvas';
 
 // ── Shared constants ──────────────────────────────────────────
 const CARRIER_COLORS = {
@@ -138,8 +139,10 @@ export default function DeckView({ plans }) {
     [plans]
   );
 
-  const [vmIdx, setVmIdx]   = useState(0);
-  const [copied, setCopied] = useState(false);
+  const [vmIdx, setVmIdx]     = useState(0);
+  const [copied, setCopied]   = useState(false);
+  const [imaging, setImaging] = useState(false);
+  const tableRef = useRef(null);
 
   const vmPlan  = vmPlans[vmIdx] ?? null;
   const vmPrice = vmPlan ? eff(vmPlan) : 15;
@@ -218,6 +221,25 @@ export default function DeckView({ plans }) {
     XLSX.writeFile(wb, `vm-sim-deck-${new Date().toISOString().slice(0, 10)}.xlsx`);
   };
 
+  // ── Image export ───────────────────────────────────────────
+  const handleImage = async () => {
+    if (!tableRef.current) return;
+    setImaging(true);
+    try {
+      const canvas = await html2canvas(tableRef.current, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#ffffff',
+      });
+      const link = document.createElement('a');
+      link.download = `vm-sim-deck-${new Date().toISOString().slice(0, 10)}.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    } finally {
+      setImaging(false);
+    }
+  };
+
   if (!plans.length) return null;
 
   return (
@@ -250,11 +272,14 @@ export default function DeckView({ plans }) {
           <button className="export-btn" onClick={handleExcel}>
             ↓ Excel
           </button>
+          <button className="export-btn" onClick={handleImage} disabled={imaging}>
+            {imaging ? '...' : '↓ Image'}
+          </button>
         </div>
       </div>
 
       {/* ── Main comparison table ─────────────────────── */}
-      <div className="deck-table-wrap">
+      <div className="deck-table-wrap" ref={tableRef}>
         <table className="deck-table">
           <thead>
             <tr className="deck-thead-tr">
