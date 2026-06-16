@@ -2418,7 +2418,7 @@
   text-transform: none;
   letter-spacing: 0;
   margin-top: 0.1rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.8);
 }
 
 .deck-td {
