@@ -1,12 +1,13 @@
 {
-  "timestamp": "2026-06-14T13:18:20.753Z",
+  "timestamp": "2026-06-16T19:59:11.548Z",
   "hasChanges": true,
   "summary": {
-    "added": 1,
-    "removed": 0,
+    "added": 0,
+    "removed": 1,
     "changed": 0
   },
-  "added": [
+  "added": [],
+  "removed": [
     {
       "carrier": "gomo",
       "carrierDisplay": "GoMo",
@@ -33,6 +34,5 @@
       "unlimitedCalls": false
     }
   ],
-  "removed": [],
   "changed": []
 }
