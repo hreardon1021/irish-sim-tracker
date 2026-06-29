@@ -1,62 +1,13 @@
 {
-  "timestamp": "2026-06-25T16:12:36.796Z",
+  "timestamp": "2026-06-29T11:55:55.895Z",
   "hasChanges": true,
   "summary": {
-    "added": 4,
+    "added": 0,
     "removed": 1,
-    "changed": 2
+    "changed": 0
   },
-  "added": [
-    {
-      "carrier": "vodafone",
-      "carrierDisplay": "Vodafone",
-      "name": "€20/mo Plan",
-      "priceEur": 20,
-      "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 0,
-      "dataDisplay": "Unknown",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": false,
-      "roaming": "No roaming",
-      "contractType": "12-month",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.vodafone.ie/sim-only/bill-pay",
-      "network": "Vodafone",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
-    },
-    {
-      "carrier": "vodafone",
-      "carrierDisplay": "Vodafone",
-      "name": "80GB Plan",
-      "priceEur": 35,
-      "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 80,
-      "dataDisplay": "80GB",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": false,
-      "roaming": "No roaming",
-      "contractType": "12-month",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.vodafone.ie/sim-only/bill-pay",
-      "network": "Vodafone",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
-    },
+  "added": [],
+  "removed": [
     {
       "carrier": "gomo",
       "carrierDisplay": "GoMo",
@@ -81,126 +32,7 @@
       "freeMonth": false,
       "forLife": true,
       "unlimitedCalls": false
-    },
-    {
-      "carrier": "tescomobile",
-      "carrierDisplay": "Tesco Mobile",
-      "name": "Elevate SIM",
-      "priceEur": 30,
-      "promoPrice": 15,
-      "promoNote": "for first 12 months",
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": true,
-      "roaming": "EU roaming included",
-      "contractType": "12-month",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.tescomobile.ie/sim-only-plans",
-      "network": "Three",
-      "hasPromo": true,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
     }
   ],
-  "removed": [
-    {
-      "carrier": "vodafone",
-      "carrierDisplay": "Vodafone",
-      "name": "Ultra SIM only",
-      "priceEur": 35,
-      "promoPrice": 20,
-      "promoNote": "First 6 months",
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": true,
-      "roaming": "EU roaming included",
-      "contractType": "12-month",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.vodafone.ie/sim-only/bill-pay",
-      "network": "Vodafone",
-      "hasPromo": true,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
-    }
-  ],
-  "changed": [
-    {
-      "plan": {
-        "carrier": "tescomobile",
-        "carrierDisplay": "Tesco Mobile",
-        "name": "Bill Pay SIM Only plans",
-        "priceEur": 30,
-        "promoPrice": 10,
-        "promoNote": "for first 12 months",
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": true,
-        "roaming": "EU roaming included",
-        "contractType": "12-month",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.tescomobile.ie/sim-only-plans",
-        "network": "Three",
-        "hasPromo": true,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": true
-      },
-      "diffs": {
-        "promoNote": {
-          "from": "for first 6 months",
-          "to": "for first 12 months"
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "tescomobile",
-        "carrierDisplay": "Tesco Mobile",
-        "name": "5G Clubcard SIM",
-        "priceEur": 15,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 95,
-        "dataDisplay": "95GB",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": false,
-        "roaming": "EU roaming included",
-        "contractType": "30-day rolling",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://www.tescomobile.ie/sim-only-plans",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "priceEur": {
-          "from": 20,
-          "to": 15
-        }
-      }
-    }
-  ]
+  "changed": []
 }
