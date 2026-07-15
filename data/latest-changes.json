@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-14T09:02:24.578Z",
+  "timestamp": "2026-07-15T09:07:41.448Z",
   "hasChanges": true,
   "summary": {
     "added": 1,
@@ -7,33 +7,6 @@
     "changed": 0
   },
   "added": [
-    {
-      "carrier": "clearmobile",
-      "carrierDisplay": "Clear Mobile",
-      "name": "€12.99/mo Plan",
-      "priceEur": 12.99,
-      "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 0,
-      "dataDisplay": "Unknown",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": false,
-      "roaming": "No roaming",
-      "contractType": "30-day rolling",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.clearmobile.ie/",
-      "network": "Three",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": false
-    }
-  ],
-  "removed": [
     {
       "carrier": "gomo",
       "carrierDisplay": "GoMo",
@@ -57,6 +30,33 @@
       "hasPromo": false,
       "freeMonth": false,
       "forLife": true,
+      "unlimitedCalls": false
+    }
+  ],
+  "removed": [
+    {
+      "carrier": "clearmobile",
+      "carrierDisplay": "Clear Mobile",
+      "name": "€12.99/mo Plan",
+      "priceEur": 12.99,
+      "promoPrice": null,
+      "promoNote": null,
+      "dataGB": 0,
+      "dataDisplay": "Unknown",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": true,
+      "isUnlimited": false,
+      "roaming": "No roaming",
+      "contractType": "30-day rolling",
+      "extras": [
+        "5G"
+      ],
+      "url": "https://www.clearmobile.ie/",
+      "network": "Three",
+      "hasPromo": false,
+      "freeMonth": false,
+      "forLife": false,
       "unlimitedCalls": false
     }
   ],
