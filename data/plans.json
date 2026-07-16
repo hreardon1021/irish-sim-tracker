@@ -77,7 +77,7 @@
   {
     "carrier": "three",
     "carrierDisplay": "Three",
-    "name": "INSTANT ESIM ACCESS",
+    "name": "A SIM only deal to get your claws into",
     "priceEur": 34.99,
     "promoPrice": 14,
     "promoNote": "for 6 months",
@@ -197,6 +197,31 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": true,
+    "unlimitedCalls": false
+  },
+  {
+    "carrier": "clearmobile",
+    "carrierDisplay": "Clear Mobile",
+    "name": "€12.99/mo Plan",
+    "priceEur": 12.99,
+    "promoPrice": null,
+    "promoNote": null,
+    "dataGB": 0,
+    "dataDisplay": "Unknown",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "No roaming",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://www.clearmobile.ie/",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": false,
     "unlimitedCalls": false
   },
   {
