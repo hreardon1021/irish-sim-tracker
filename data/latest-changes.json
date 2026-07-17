@@ -1,37 +1,13 @@
 {
-  "timestamp": "2026-07-16T09:10:41.758Z",
+  "timestamp": "2026-07-17T09:05:40.438Z",
   "hasChanges": true,
   "summary": {
-    "added": 2,
+    "added": 0,
     "removed": 1,
     "changed": 0
   },
-  "added": [
-    {
-      "carrier": "three",
-      "carrierDisplay": "Three",
-      "name": "A SIM only deal to get your claws into",
-      "priceEur": 34.99,
-      "promoPrice": 14,
-      "promoNote": "for 6 months",
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": true,
-      "roaming": "No roaming",
-      "contractType": "24-month",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.three.ie/deals/sim-only.html",
-      "network": "Three",
-      "hasPromo": true,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
-    },
+  "added": [],
+  "removed": [
     {
       "carrier": "clearmobile",
       "carrierDisplay": "Clear Mobile",
@@ -56,33 +32,6 @@
       "freeMonth": false,
       "forLife": false,
       "unlimitedCalls": false
-    }
-  ],
-  "removed": [
-    {
-      "carrier": "three",
-      "carrierDisplay": "Three",
-      "name": "INSTANT ESIM ACCESS",
-      "priceEur": 34.99,
-      "promoPrice": 14,
-      "promoNote": "for 6 months",
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": true,
-      "roaming": "No roaming",
-      "contractType": "24-month",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.three.ie/deals/sim-only.html",
-      "network": "Three",
-      "hasPromo": true,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
     }
   ],
   "changed": []
