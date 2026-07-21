@@ -1,13 +1,12 @@
 {
-  "timestamp": "2026-07-19T09:03:43.466Z",
+  "timestamp": "2026-07-21T09:24:51.281Z",
   "hasChanges": true,
   "summary": {
-    "added": 0,
-    "removed": 1,
+    "added": 1,
+    "removed": 0,
     "changed": 0
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
       "carrier": "clearmobile",
       "carrierDisplay": "Clear Mobile",
@@ -34,5 +33,6 @@
       "unlimitedCalls": false
     }
   ],
+  "removed": [],
   "changed": []
 }
