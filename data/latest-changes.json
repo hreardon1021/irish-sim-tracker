@@ -1,13 +1,12 @@
 {
-  "timestamp": "2026-07-24T09:17:38.371Z",
+  "timestamp": "2026-07-25T08:57:14.049Z",
   "hasChanges": true,
   "summary": {
-    "added": 0,
-    "removed": 2,
+    "added": 1,
+    "removed": 0,
     "changed": 0
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
       "carrier": "gomo",
       "carrierDisplay": "GoMo",
@@ -32,32 +31,8 @@
       "freeMonth": false,
       "forLife": true,
       "unlimitedCalls": false
-    },
-    {
-      "carrier": "clearmobile",
-      "carrierDisplay": "Clear Mobile",
-      "name": "€12.99/mo Plan",
-      "priceEur": 12.99,
-      "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 0,
-      "dataDisplay": "Unknown",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": false,
-      "roaming": "No roaming",
-      "contractType": "30-day rolling",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.clearmobile.ie/",
-      "network": "Three",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": false
     }
   ],
+  "removed": [],
   "changed": []
 }
