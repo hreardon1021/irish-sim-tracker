@@ -175,28 +175,28 @@
     "unlimitedCalls": true
   },
   {
-    "carrier": "clearmobile",
-    "carrierDisplay": "Clear Mobile",
-    "name": "€12.99/mo Plan",
-    "priceEur": 12.99,
+    "carrier": "gomo",
+    "carrierDisplay": "GoMo",
+    "name": "GoMo Mobile",
+    "priceEur": 14.99,
     "promoPrice": null,
-    "promoNote": null,
-    "dataGB": 0,
-    "dataDisplay": "Unknown",
+    "promoNote": "Price for life",
+    "dataGB": 23,
+    "dataDisplay": "23GB",
     "minutes": "Unlimited",
     "sms": "Unlimited",
     "is5G": true,
     "isUnlimited": false,
-    "roaming": "No roaming",
+    "roaming": "EU roaming included",
     "contractType": "30-day rolling",
     "extras": [
       "5G"
     ],
-    "url": "https://www.clearmobile.ie/",
+    "url": "https://shop.gomo.ie/mobile-sim-only",
     "network": "Three",
     "hasPromo": false,
     "freeMonth": false,
-    "forLife": false,
+    "forLife": true,
     "unlimitedCalls": false
   },
   {
