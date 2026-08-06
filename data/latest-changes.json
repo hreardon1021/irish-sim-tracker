@@ -1,38 +1,97 @@
 {
-  "timestamp": "2026-08-05T09:32:13.063Z",
+  "timestamp": "2026-08-06T09:37:23.338Z",
   "hasChanges": true,
   "summary": {
-    "added": 1,
-    "removed": 0,
-    "changed": 0
+    "added": 0,
+    "removed": 2,
+    "changed": 1
   },
-  "added": [
+  "added": [],
+  "removed": [
     {
-      "carrier": "clearmobile",
-      "carrierDisplay": "Clear Mobile",
-      "name": "€12.99/mo Plan",
-      "priceEur": 12.99,
+      "carrier": "vodafone",
+      "carrierDisplay": "Vodafone",
+      "name": "80GB Plan",
+      "priceEur": 35,
       "promoPrice": null,
       "promoNote": null,
-      "dataGB": 0,
-      "dataDisplay": "Unknown",
+      "dataGB": 80,
+      "dataDisplay": "80GB",
       "minutes": "Unlimited",
       "sms": "Unlimited",
       "is5G": true,
       "isUnlimited": false,
       "roaming": "No roaming",
+      "contractType": "12-month",
+      "extras": [
+        "5G"
+      ],
+      "url": "https://www.vodafone.ie/sim-only/bill-pay",
+      "network": "Vodafone",
+      "hasPromo": false,
+      "freeMonth": false,
+      "forLife": false,
+      "unlimitedCalls": true
+    },
+    {
+      "carrier": "gomo",
+      "carrierDisplay": "GoMo",
+      "name": "GoMo Mobile",
+      "priceEur": 14.99,
+      "promoPrice": null,
+      "promoNote": "Price for life",
+      "dataGB": 23,
+      "dataDisplay": "23GB",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": true,
+      "isUnlimited": false,
+      "roaming": "EU roaming included",
       "contractType": "30-day rolling",
       "extras": [
         "5G"
       ],
-      "url": "https://www.clearmobile.ie/",
+      "url": "https://shop.gomo.ie/mobile-sim-only",
       "network": "Three",
       "hasPromo": false,
       "freeMonth": false,
-      "forLife": false,
+      "forLife": true,
       "unlimitedCalls": false
     }
   ],
-  "removed": [],
-  "changed": []
+  "changed": [
+    {
+      "plan": {
+        "carrier": "vodafone",
+        "carrierDisplay": "Vodafone",
+        "name": "€17.5/mo Plan",
+        "priceEur": 17.5,
+        "promoPrice": null,
+        "promoNote": null,
+        "dataGB": 0,
+        "dataDisplay": "Unknown",
+        "minutes": "Unlimited",
+        "sms": "Unlimited",
+        "is5G": true,
+        "isUnlimited": false,
+        "roaming": "No roaming",
+        "contractType": "30-day rolling",
+        "extras": [
+          "5G"
+        ],
+        "url": "https://www.vodafone.ie/sim-only/bill-pay",
+        "network": "Vodafone",
+        "hasPromo": false,
+        "freeMonth": false,
+        "forLife": false,
+        "unlimitedCalls": false
+      },
+      "diffs": {
+        "contractType": {
+          "from": "12-month",
+          "to": "30-day rolling"
+        }
+      }
+    }
+  ]
 }

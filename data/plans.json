@@ -13,7 +13,7 @@
     "is5G": true,
     "isUnlimited": false,
     "roaming": "No roaming",
-    "contractType": "12-month",
+    "contractType": "30-day rolling",
     "extras": [
       "5G"
     ],
@@ -22,57 +22,7 @@
     "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
-    "unlimitedCalls": true
-  },
-  {
-    "carrier": "vodafone",
-    "carrierDisplay": "Vodafone",
-    "name": "80GB Plan",
-    "priceEur": 17.5,
-    "promoPrice": null,
-    "promoNote": null,
-    "dataGB": 80,
-    "dataDisplay": "80GB",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": false,
-    "roaming": "No roaming",
-    "contractType": "12-month",
-    "extras": [
-      "5G"
-    ],
-    "url": "https://www.vodafone.ie/sim-only/bill-pay",
-    "network": "Vodafone",
-    "hasPromo": false,
-    "freeMonth": false,
-    "forLife": false,
-    "unlimitedCalls": true
-  },
-  {
-    "carrier": "vodafone",
-    "carrierDisplay": "Vodafone",
-    "name": "80GB Plan",
-    "priceEur": 35,
-    "promoPrice": null,
-    "promoNote": null,
-    "dataGB": 80,
-    "dataDisplay": "80GB",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": false,
-    "roaming": "No roaming",
-    "contractType": "12-month",
-    "extras": [
-      "5G"
-    ],
-    "url": "https://www.vodafone.ie/sim-only/bill-pay",
-    "network": "Vodafone",
-    "hasPromo": false,
-    "freeMonth": false,
-    "forLife": false,
-    "unlimitedCalls": true
+    "unlimitedCalls": false
   },
   {
     "carrier": "three",
@@ -173,31 +123,6 @@
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": true
-  },
-  {
-    "carrier": "gomo",
-    "carrierDisplay": "GoMo",
-    "name": "GoMo Mobile",
-    "priceEur": 14.99,
-    "promoPrice": null,
-    "promoNote": "Price for life",
-    "dataGB": 23,
-    "dataDisplay": "23GB",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": false,
-    "roaming": "EU roaming included",
-    "contractType": "30-day rolling",
-    "extras": [
-      "5G"
-    ],
-    "url": "https://shop.gomo.ie/mobile-sim-only",
-    "network": "Three",
-    "hasPromo": false,
-    "freeMonth": false,
-    "forLife": true,
-    "unlimitedCalls": false
   },
   {
     "carrier": "clearmobile",
