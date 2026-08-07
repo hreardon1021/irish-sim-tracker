@@ -1,13 +1,12 @@
 {
-  "timestamp": "2026-08-06T09:37:23.338Z",
+  "timestamp": "2026-08-07T08:10:05.526Z",
   "hasChanges": true,
   "summary": {
-    "added": 0,
-    "removed": 2,
+    "added": 3,
+    "removed": 0,
     "changed": 1
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
       "carrier": "vodafone",
       "carrierDisplay": "Vodafone",
@@ -57,8 +56,32 @@
       "freeMonth": false,
       "forLife": true,
       "unlimitedCalls": false
+    },
+    {
+      "carrier": "virginmedia",
+      "carrierDisplay": "Virgin Media Mobile",
+      "name": "Exclusive Broadband & SIM Bundles",
+      "priceEur": 9.99,
+      "promoPrice": null,
+      "promoNote": null,
+      "dataGB": 0,
+      "dataDisplay": "Unknown",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": false,
+      "isUnlimited": false,
+      "roaming": "No roaming",
+      "contractType": "30-day rolling",
+      "extras": [],
+      "url": "https://www.virginmedia.ie/mobile/sim-only/",
+      "network": "Three",
+      "hasPromo": false,
+      "freeMonth": false,
+      "forLife": false,
+      "unlimitedCalls": false
     }
   ],
+  "removed": [],
   "changed": [
     {
       "plan": {
@@ -75,7 +98,7 @@
         "is5G": true,
         "isUnlimited": false,
         "roaming": "No roaming",
-        "contractType": "30-day rolling",
+        "contractType": "12-month",
         "extras": [
           "5G"
         ],
@@ -84,12 +107,12 @@
         "hasPromo": false,
         "freeMonth": false,
         "forLife": false,
-        "unlimitedCalls": false
+        "unlimitedCalls": true
       },
       "diffs": {
         "contractType": {
-          "from": "12-month",
-          "to": "30-day rolling"
+          "from": "30-day rolling",
+          "to": "12-month"
         }
       }
     }
