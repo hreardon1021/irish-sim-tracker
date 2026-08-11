@@ -175,6 +175,56 @@
     "unlimitedCalls": true
   },
   {
+    "carrier": "gomo",
+    "carrierDisplay": "GoMo",
+    "name": "GoMo Mobile",
+    "priceEur": 14.99,
+    "promoPrice": null,
+    "promoNote": "Price for life",
+    "dataGB": 23,
+    "dataDisplay": "23GB",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://shop.gomo.ie/mobile-sim-only",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": true,
+    "unlimitedCalls": false
+  },
+  {
+    "carrier": "clearmobile",
+    "carrierDisplay": "Clear Mobile",
+    "name": "€12.99/mo Plan",
+    "priceEur": 12.99,
+    "promoPrice": null,
+    "promoNote": null,
+    "dataGB": 0,
+    "dataDisplay": "Unknown",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "No roaming",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://www.clearmobile.ie/",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": false,
+    "unlimitedCalls": false
+  },
+  {
     "carrier": "skymobile",
     "carrierDisplay": "Sky Mobile",
     "name": "Unlimited Plan",
