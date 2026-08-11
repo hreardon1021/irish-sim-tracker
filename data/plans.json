@@ -14,7 +14,9 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "24-month",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": true,
@@ -37,7 +39,9 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "12-month",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": false,
@@ -60,7 +64,9 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "24-month",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": true,
@@ -83,7 +89,9 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "30-day rolling",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": false,
@@ -106,7 +114,9 @@
     "isUnlimited": false,
     "roaming": "EU roaming included",
     "contractType": "30-day rolling",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://shop.gomo.ie/mobile-sim-only",
     "network": "Three",
     "hasPromo": false,
@@ -129,7 +139,9 @@
     "isUnlimited": false,
     "roaming": "No roaming",
     "contractType": "30-day rolling",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.clearmobile.ie/",
     "network": "Three",
     "hasPromo": false,
@@ -198,7 +210,9 @@
     "isUnlimited": true,
     "roaming": "EU roaming included",
     "contractType": "12-month",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.vodafone.ie/sim-only/bill-pay",
     "network": "Vodafone",
     "hasPromo": true,
@@ -267,7 +281,9 @@
     "isUnlimited": true,
     "roaming": "EU roaming included",
     "contractType": "12-month",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.tescomobile.ie/sim-only-plans",
     "network": "Three",
     "hasPromo": true,
@@ -290,10 +306,87 @@
     "isUnlimited": true,
     "roaming": "EU roaming included",
     "contractType": "30-day rolling",
-    "extras": ["5G"],
+    "extras": [
+      "5G"
+    ],
     "url": "https://www.tescomobile.ie/sim-only-plans",
     "network": "Three",
     "hasPromo": true,
+    "freeMonth": false,
+    "forLife": false,
+    "unlimitedCalls": true
+  },
+  {
+    "carrier": "eir",
+    "carrierDisplay": "eir",
+    "name": "SIM Only (Broadband Bundle)",
+    "priceEur": 19.99,
+    "promoPrice": 9.99,
+    "promoNote": "with eir broadband",
+    "dataGB": 9999,
+    "dataDisplay": "Unlimited",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": true,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://www.eir.ie/mobile/simonly/",
+    "network": "eir",
+    "hasPromo": true,
+    "freeMonth": false,
+    "forLife": false,
+    "unlimitedCalls": true
+  },
+  {
+    "carrier": "eir",
+    "carrierDisplay": "eir",
+    "name": "SIM Only 30GB",
+    "priceEur": 14.99,
+    "promoPrice": null,
+    "promoNote": null,
+    "dataGB": 30,
+    "dataDisplay": "30GB",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://www.eir.ie/mobile/simonly/",
+    "network": "eir",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": false,
+    "unlimitedCalls": true
+  },
+  {
+    "carrier": "eir",
+    "carrierDisplay": "eir",
+    "name": "SIM Only Unlimited",
+    "priceEur": 24.99,
+    "promoPrice": null,
+    "promoNote": null,
+    "dataGB": 9999,
+    "dataDisplay": "Unlimited",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": true,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://www.eir.ie/mobile/simonly/",
+    "network": "eir",
+    "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": true
