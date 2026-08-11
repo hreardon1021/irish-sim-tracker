@@ -1,30 +1,5 @@
 [
   {
-    "carrier": "vodafone",
-    "carrierDisplay": "Vodafone",
-    "name": "Ultra SIM only",
-    "priceEur": 35,
-    "promoPrice": 20,
-    "promoNote": "First 6 months",
-    "dataGB": 9999,
-    "dataDisplay": "Unlimited",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": true,
-    "roaming": "EU roaming included",
-    "contractType": "12-month",
-    "extras": [
-      "5G"
-    ],
-    "url": "https://www.vodafone.ie/sim-only/bill-pay",
-    "network": "Vodafone",
-    "hasPromo": true,
-    "freeMonth": false,
-    "forLife": false,
-    "unlimitedCalls": true
-  },
-  {
     "carrier": "three",
     "carrierDisplay": "Three",
     "name": "INSTANT ESIM ACCESS",
@@ -39,9 +14,7 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "24-month",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": true,
@@ -64,9 +37,7 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "12-month",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": false,
@@ -89,9 +60,7 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "24-month",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": true,
@@ -114,9 +83,7 @@
     "isUnlimited": true,
     "roaming": "No roaming",
     "contractType": "30-day rolling",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://www.three.ie/deals/sim-only.html",
     "network": "Three",
     "hasPromo": false,
@@ -139,9 +106,7 @@
     "isUnlimited": false,
     "roaming": "EU roaming included",
     "contractType": "30-day rolling",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://shop.gomo.ie/mobile-sim-only",
     "network": "Three",
     "hasPromo": false,
@@ -164,9 +129,7 @@
     "isUnlimited": false,
     "roaming": "No roaming",
     "contractType": "30-day rolling",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://www.clearmobile.ie/",
     "network": "Three",
     "hasPromo": false,
@@ -235,9 +198,7 @@
     "isUnlimited": true,
     "roaming": "EU roaming included",
     "contractType": "12-month",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://www.tescomobile.ie/sim-only-plans",
     "network": "Three",
     "hasPromo": true,
@@ -260,9 +221,7 @@
     "isUnlimited": false,
     "roaming": "EU roaming included",
     "contractType": "30-day rolling",
-    "extras": [
-      "5G"
-    ],
+    "extras": ["5G"],
     "url": "https://www.tescomobile.ie/sim-only-plans",
     "network": "Three",
     "hasPromo": false,
@@ -296,24 +255,47 @@
   {
     "carrier": "virginmedia",
     "carrierDisplay": "Virgin Media Mobile",
-    "name": "SIM Only Deal - a Month For Life!",
-    "priceEur": 15,
-    "promoPrice": null,
-    "promoNote": "Price for life",
+    "name": "SIM Only",
+    "priceEur": 14.99,
+    "promoPrice": 9.99,
+    "promoNote": "First 12 months (with VM broadband)",
     "dataGB": 9999,
     "dataDisplay": "Unlimited",
     "minutes": "Unlimited",
     "sms": "Unlimited",
     "is5G": false,
     "isUnlimited": true,
-    "roaming": "No roaming",
-    "contractType": "12-month",
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
     "extras": [],
     "url": "https://www.virginmedia.ie/mobile/sim-only/",
     "network": "Three",
-    "hasPromo": false,
+    "hasPromo": true,
     "freeMonth": false,
-    "forLife": true,
-    "unlimitedCalls": false
+    "forLife": false,
+    "unlimitedCalls": true
+  },
+  {
+    "carrier": "vodafone",
+    "carrierDisplay": "Vodafone",
+    "name": "Ultra SIM only",
+    "priceEur": 35.0,
+    "promoPrice": 17.5,
+    "promoNote": "First 6 months",
+    "dataGB": 9999,
+    "dataDisplay": "Unlimited",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": true,
+    "roaming": "EU roaming included",
+    "contractType": "12-month",
+    "extras": ["5G"],
+    "url": "https://www.vodafone.ie/sim-only/bill-pay",
+    "network": "Vodafone",
+    "hasPromo": true,
+    "freeMonth": false,
+    "forLife": false,
+    "unlimitedCalls": true
   }
 ]
