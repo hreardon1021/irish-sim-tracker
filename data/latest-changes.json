@@ -1,177 +1,38 @@
 {
-  "timestamp": "2026-08-13T08:14:37.734Z",
+  "timestamp": "2026-08-18T07:32:20.635Z",
   "hasChanges": true,
   "summary": {
-    "added": 2,
-    "removed": 2,
-    "changed": 2
+    "added": 0,
+    "removed": 1,
+    "changed": 0
   },
-  "added": [
-    {
-      "carrier": "three",
-      "carrierDisplay": "Three",
-      "name": "Three SIM Freedom 24M",
-      "priceEur": 28,
-      "promoPrice": 14,
-      "promoNote": "for 6 months",
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": false,
-      "isUnlimited": true,
-      "roaming": "No roaming",
-      "contractType": "24-month",
-      "extras": [],
-      "url": "https://www.three.ie/deals/sim-only.html",
-      "network": "Three",
-      "hasPromo": true,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
-    },
-    {
-      "carrier": "three",
-      "carrierDisplay": "Three",
-      "name": "Three SIM Flex 5G 30 Day",
-      "priceEur": 34.99,
-      "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": true,
-      "roaming": "No roaming",
-      "contractType": "30-day rolling",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.three.ie/deals/sim-only.html",
-      "network": "Three",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
-    }
-  ],
+  "added": [],
   "removed": [
     {
-      "carrier": "three",
-      "carrierDisplay": "Three",
-      "name": "Unlimited 5G Deal",
-      "priceEur": 28,
-      "promoPrice": 14,
-      "promoNote": "for 6 months",
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": true,
-      "roaming": "No roaming",
-      "contractType": "24-month",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.three.ie/deals/sim-only.html",
-      "network": "Three",
-      "hasPromo": true,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": true
-    },
-    {
-      "carrier": "three",
-      "carrierDisplay": "Three",
-      "name": "Three SIM Flex 5G",
-      "priceEur": 34.99,
+      "carrier": "clearmobile",
+      "carrierDisplay": "Clear Mobile",
+      "name": "€12.99/mo Plan",
+      "priceEur": 12.99,
       "promoPrice": null,
       "promoNote": null,
-      "dataGB": 9999,
-      "dataDisplay": "Unlimited",
+      "dataGB": 0,
+      "dataDisplay": "Unknown",
       "minutes": "Unlimited",
       "sms": "Unlimited",
       "is5G": true,
-      "isUnlimited": true,
+      "isUnlimited": false,
       "roaming": "No roaming",
       "contractType": "30-day rolling",
       "extras": [
         "5G"
       ],
-      "url": "https://www.three.ie/deals/sim-only.html",
+      "url": "https://www.clearmobile.ie/",
       "network": "Three",
       "hasPromo": false,
       "freeMonth": false,
       "forLife": false,
-      "unlimitedCalls": true
+      "unlimitedCalls": false
     }
   ],
-  "changed": [
-    {
-      "plan": {
-        "carrier": "three",
-        "carrierDisplay": "Three",
-        "name": "Three SIM Core",
-        "priceEur": 20,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": false,
-        "isUnlimited": true,
-        "roaming": "No roaming",
-        "contractType": "12-month",
-        "extras": [],
-        "url": "https://www.three.ie/deals/sim-only.html",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": true
-      },
-      "diffs": {
-        "is5G": {
-          "from": true,
-          "to": false
-        }
-      }
-    },
-    {
-      "plan": {
-        "carrier": "gomo",
-        "carrierDisplay": "GoMo",
-        "name": "GoMo Mobile",
-        "priceEur": 12.99,
-        "promoPrice": null,
-        "promoNote": "Price for life",
-        "dataGB": 23,
-        "dataDisplay": "23GB",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": false,
-        "roaming": "EU roaming included",
-        "contractType": "30-day rolling",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://shop.gomo.ie/mobile-sim-only",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": true,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "priceEur": {
-          "from": 14.99,
-          "to": 12.99
-        }
-      }
-    }
-  ]
+  "changed": []
 }
