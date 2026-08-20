@@ -1,13 +1,12 @@
 {
-  "timestamp": "2026-08-18T07:32:20.635Z",
+  "timestamp": "2026-08-20T07:35:43.340Z",
   "hasChanges": true,
   "summary": {
-    "added": 0,
-    "removed": 1,
-    "changed": 0
+    "added": 1,
+    "removed": 0,
+    "changed": 1
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
       "carrier": "clearmobile",
       "carrierDisplay": "Clear Mobile",
@@ -34,5 +33,42 @@
       "unlimitedCalls": false
     }
   ],
-  "changed": []
+  "removed": [],
+  "changed": [
+    {
+      "plan": {
+        "carrier": "skymobile",
+        "carrierDisplay": "Sky Mobile",
+        "name": "Unlimited Plan",
+        "priceEur": 15,
+        "promoPrice": 12,
+        "promoNote": "Limited time offer",
+        "dataGB": 0,
+        "dataDisplay": "Unknown",
+        "minutes": "Unlimited",
+        "sms": "Unlimited",
+        "is5G": false,
+        "isUnlimited": false,
+        "roaming": "No roaming",
+        "contractType": "12-month",
+        "extras": [],
+        "url": "https://www.sky.com/ie/shop/mobile/plans/",
+        "network": "Vodafone",
+        "hasPromo": true,
+        "freeMonth": false,
+        "forLife": false,
+        "unlimitedCalls": false
+      },
+      "diffs": {
+        "promoPrice": {
+          "from": null,
+          "to": 12
+        },
+        "promoNote": {
+          "from": null,
+          "to": "Limited time offer"
+        }
+      }
+    }
+  ]
 }

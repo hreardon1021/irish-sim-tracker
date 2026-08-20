@@ -196,12 +196,37 @@
     "unlimitedCalls": false
   },
   {
+    "carrier": "clearmobile",
+    "carrierDisplay": "Clear Mobile",
+    "name": "€12.99/mo Plan",
+    "priceEur": 12.99,
+    "promoPrice": null,
+    "promoNote": null,
+    "dataGB": 0,
+    "dataDisplay": "Unknown",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "No roaming",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://www.clearmobile.ie/",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": false,
+    "unlimitedCalls": false
+  },
+  {
     "carrier": "skymobile",
     "carrierDisplay": "Sky Mobile",
     "name": "Unlimited Plan",
     "priceEur": 15,
-    "promoPrice": null,
-    "promoNote": null,
+    "promoPrice": 12,
+    "promoNote": "Limited time offer",
     "dataGB": 0,
     "dataDisplay": "Unknown",
     "minutes": "Unlimited",
@@ -213,7 +238,7 @@
     "extras": [],
     "url": "https://www.sky.com/ie/shop/mobile/plans/",
     "network": "Vodafone",
-    "hasPromo": false,
+    "hasPromo": true,
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": false
