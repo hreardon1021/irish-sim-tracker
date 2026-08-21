@@ -378,7 +378,7 @@
     "is5G": false,
     "isUnlimited": true,
     "roaming": "No roaming",
-    "contractType": "30-day rolling",
+    "contractType": "12-month",
     "extras": [],
     "url": "https://www.virginmedia.ie/mobile/sim-only/",
     "network": "Three",

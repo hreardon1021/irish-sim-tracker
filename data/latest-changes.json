@@ -1,72 +1,42 @@
 {
-  "timestamp": "2026-08-20T07:35:43.340Z",
+  "timestamp": "2026-08-21T07:37:36.251Z",
   "hasChanges": true,
   "summary": {
-    "added": 1,
+    "added": 0,
     "removed": 0,
     "changed": 1
   },
-  "added": [
-    {
-      "carrier": "clearmobile",
-      "carrierDisplay": "Clear Mobile",
-      "name": "€12.99/mo Plan",
-      "priceEur": 12.99,
-      "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 0,
-      "dataDisplay": "Unknown",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": false,
-      "roaming": "No roaming",
-      "contractType": "30-day rolling",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.clearmobile.ie/",
-      "network": "Three",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": false
-    }
-  ],
+  "added": [],
   "removed": [],
   "changed": [
     {
       "plan": {
-        "carrier": "skymobile",
-        "carrierDisplay": "Sky Mobile",
-        "name": "Unlimited Plan",
+        "carrier": "virginmedia",
+        "carrierDisplay": "Virgin Media Mobile",
+        "name": "SIM Only Deal - a month",
         "priceEur": 15,
-        "promoPrice": 12,
-        "promoNote": "Limited time offer",
-        "dataGB": 0,
-        "dataDisplay": "Unknown",
+        "promoPrice": null,
+        "promoNote": null,
+        "dataGB": 9999,
+        "dataDisplay": "Unlimited",
         "minutes": "Unlimited",
         "sms": "Unlimited",
         "is5G": false,
-        "isUnlimited": false,
+        "isUnlimited": true,
         "roaming": "No roaming",
         "contractType": "12-month",
         "extras": [],
-        "url": "https://www.sky.com/ie/shop/mobile/plans/",
-        "network": "Vodafone",
-        "hasPromo": true,
+        "url": "https://www.virginmedia.ie/mobile/sim-only/",
+        "network": "Three",
+        "hasPromo": false,
         "freeMonth": false,
         "forLife": false,
         "unlimitedCalls": false
       },
       "diffs": {
-        "promoPrice": {
-          "from": null,
-          "to": 12
-        },
-        "promoNote": {
-          "from": null,
-          "to": "Limited time offer"
+        "contractType": {
+          "from": "30-day rolling",
+          "to": "12-month"
         }
       }
     }
