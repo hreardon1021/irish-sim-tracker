@@ -1,44 +1,38 @@
 {
-  "timestamp": "2026-08-21T07:37:36.251Z",
+  "timestamp": "2026-08-22T07:26:53.966Z",
   "hasChanges": true,
   "summary": {
     "added": 0,
-    "removed": 0,
-    "changed": 1
+    "removed": 1,
+    "changed": 0
   },
   "added": [],
-  "removed": [],
-  "changed": [
+  "removed": [
     {
-      "plan": {
-        "carrier": "virginmedia",
-        "carrierDisplay": "Virgin Media Mobile",
-        "name": "SIM Only Deal - a month",
-        "priceEur": 15,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 9999,
-        "dataDisplay": "Unlimited",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": false,
-        "isUnlimited": true,
-        "roaming": "No roaming",
-        "contractType": "12-month",
-        "extras": [],
-        "url": "https://www.virginmedia.ie/mobile/sim-only/",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "contractType": {
-          "from": "30-day rolling",
-          "to": "12-month"
-        }
-      }
+      "carrier": "gomo",
+      "carrierDisplay": "GoMo",
+      "name": "GoMo Mobile",
+      "priceEur": 12.99,
+      "promoPrice": null,
+      "promoNote": "Price for life",
+      "dataGB": 23,
+      "dataDisplay": "23GB",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": true,
+      "isUnlimited": false,
+      "roaming": "EU roaming included",
+      "contractType": "30-day rolling",
+      "extras": [
+        "5G"
+      ],
+      "url": "https://shop.gomo.ie/mobile-sim-only",
+      "network": "Three",
+      "hasPromo": false,
+      "freeMonth": false,
+      "forLife": true,
+      "unlimitedCalls": false
     }
-  ]
+  ],
+  "changed": []
 }
