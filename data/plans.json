@@ -175,8 +175,8 @@
     "carrierDisplay": "Sky Mobile",
     "name": "Unlimited Plan",
     "priceEur": 15,
-    "promoPrice": 12,
-    "promoNote": "Limited time offer",
+    "promoPrice": null,
+    "promoNote": null,
     "dataGB": 0,
     "dataDisplay": "Unknown",
     "minutes": "Unlimited",
@@ -188,7 +188,7 @@
     "extras": [],
     "url": "https://www.sky.com/ie/shop/mobile/plans/",
     "network": "Vodafone",
-    "hasPromo": true,
+    "hasPromo": false,
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": false
@@ -219,31 +219,6 @@
   {
     "carrier": "tescomobile",
     "carrierDisplay": "Tesco Mobile",
-    "name": "Bill Pay SIM Only plans",
-    "priceEur": 15,
-    "promoPrice": null,
-    "promoNote": null,
-    "dataGB": 95,
-    "dataDisplay": "95GB",
-    "minutes": "Unlimited",
-    "sms": "Unlimited",
-    "is5G": true,
-    "isUnlimited": false,
-    "roaming": "EU roaming included",
-    "contractType": "30-day rolling",
-    "extras": [
-      "5G"
-    ],
-    "url": "https://www.tescomobile.ie/sim-only-plans",
-    "network": "Three",
-    "hasPromo": false,
-    "freeMonth": false,
-    "forLife": false,
-    "unlimitedCalls": false
-  },
-  {
-    "carrier": "tescomobile",
-    "carrierDisplay": "Tesco Mobile",
     "name": "old value",
     "priceEur": 30,
     "promoPrice": 10,
@@ -265,6 +240,31 @@
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": true
+  },
+  {
+    "carrier": "tescomobile",
+    "carrierDisplay": "Tesco Mobile",
+    "name": "5G Clubcard SIM",
+    "priceEur": 20,
+    "promoPrice": null,
+    "promoNote": null,
+    "dataGB": 95,
+    "dataDisplay": "95GB",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://www.tescomobile.ie/sim-only-plans",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": false,
+    "unlimitedCalls": false
   },
   {
     "carrier": "tescomobile",
