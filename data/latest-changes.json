@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-09-03T11:53:53.878Z",
+  "timestamp": "2026-09-04T12:01:06.491Z",
   "hasChanges": true,
   "summary": {
     "added": 1,
-    "removed": 1,
-    "changed": 1
+    "removed": 0,
+    "changed": 0
   },
   "added": [
     {
-      "carrier": "tescomobile",
-      "carrierDisplay": "Tesco Mobile",
-      "name": "5G Clubcard SIM",
-      "priceEur": 20,
+      "carrier": "gomo",
+      "carrierDisplay": "GoMo",
+      "name": "GoMo Mobile",
+      "priceEur": 12.99,
       "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 95,
-      "dataDisplay": "95GB",
+      "promoNote": "Price for life",
+      "dataGB": 23,
+      "dataDisplay": "23GB",
       "minutes": "Unlimited",
       "sms": "Unlimited",
       "is5G": true,
@@ -25,76 +25,14 @@
       "extras": [
         "5G"
       ],
-      "url": "https://www.tescomobile.ie/sim-only-plans",
+      "url": "https://shop.gomo.ie/mobile-sim-only",
       "network": "Three",
       "hasPromo": false,
       "freeMonth": false,
-      "forLife": false,
+      "forLife": true,
       "unlimitedCalls": false
     }
   ],
-  "removed": [
-    {
-      "carrier": "tescomobile",
-      "carrierDisplay": "Tesco Mobile",
-      "name": "Bill Pay SIM Only plans",
-      "priceEur": 15,
-      "promoPrice": null,
-      "promoNote": null,
-      "dataGB": 95,
-      "dataDisplay": "95GB",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": false,
-      "roaming": "EU roaming included",
-      "contractType": "30-day rolling",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://www.tescomobile.ie/sim-only-plans",
-      "network": "Three",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": false,
-      "unlimitedCalls": false
-    }
-  ],
-  "changed": [
-    {
-      "plan": {
-        "carrier": "skymobile",
-        "carrierDisplay": "Sky Mobile",
-        "name": "Unlimited Plan",
-        "priceEur": 15,
-        "promoPrice": null,
-        "promoNote": null,
-        "dataGB": 0,
-        "dataDisplay": "Unknown",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": false,
-        "isUnlimited": false,
-        "roaming": "No roaming",
-        "contractType": "12-month",
-        "extras": [],
-        "url": "https://www.sky.com/ie/shop/mobile/plans/",
-        "network": "Vodafone",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": false,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "promoPrice": {
-          "from": 12,
-          "to": null
-        },
-        "promoNote": {
-          "from": "Limited time offer",
-          "to": null
-        }
-      }
-    }
-  ]
+  "removed": [],
+  "changed": []
 }

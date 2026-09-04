@@ -171,6 +171,31 @@
     "unlimitedCalls": true
   },
   {
+    "carrier": "gomo",
+    "carrierDisplay": "GoMo",
+    "name": "GoMo Mobile",
+    "priceEur": 12.99,
+    "promoPrice": null,
+    "promoNote": "Price for life",
+    "dataGB": 23,
+    "dataDisplay": "23GB",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://shop.gomo.ie/mobile-sim-only",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": true,
+    "unlimitedCalls": false
+  },
+  {
     "carrier": "skymobile",
     "carrierDisplay": "Sky Mobile",
     "name": "Unlimited Plan",
