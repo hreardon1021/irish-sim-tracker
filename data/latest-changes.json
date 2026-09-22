@@ -1,38 +1,46 @@
 {
-  "timestamp": "2026-09-18T12:01:22.251Z",
+  "timestamp": "2026-09-22T12:16:10.642Z",
   "hasChanges": true,
   "summary": {
-    "added": 1,
+    "added": 0,
     "removed": 0,
-    "changed": 0
+    "changed": 1
   },
-  "added": [
-    {
-      "carrier": "gomo",
-      "carrierDisplay": "GoMo",
-      "name": "GoMo Mobile",
-      "priceEur": 12.99,
-      "promoPrice": null,
-      "promoNote": "Price for life",
-      "dataGB": 23,
-      "dataDisplay": "23GB",
-      "minutes": "Unlimited",
-      "sms": "Unlimited",
-      "is5G": true,
-      "isUnlimited": false,
-      "roaming": "EU roaming included",
-      "contractType": "30-day rolling",
-      "extras": [
-        "5G"
-      ],
-      "url": "https://shop.gomo.ie/mobile-sim-only",
-      "network": "Three",
-      "hasPromo": false,
-      "freeMonth": false,
-      "forLife": true,
-      "unlimitedCalls": false
-    }
-  ],
+  "added": [],
   "removed": [],
-  "changed": []
+  "changed": [
+    {
+      "plan": {
+        "carrier": "gomo",
+        "carrierDisplay": "GoMo",
+        "name": "GoMo Mobile",
+        "priceEur": 14.99,
+        "promoPrice": null,
+        "promoNote": "Price for life",
+        "dataGB": 23,
+        "dataDisplay": "23GB",
+        "minutes": "Unlimited",
+        "sms": "Unlimited",
+        "is5G": true,
+        "isUnlimited": false,
+        "roaming": "EU roaming included",
+        "contractType": "30-day rolling",
+        "extras": [
+          "5G"
+        ],
+        "url": "https://shop.gomo.ie/mobile-sim-only",
+        "network": "Three",
+        "hasPromo": false,
+        "freeMonth": false,
+        "forLife": true,
+        "unlimitedCalls": false
+      },
+      "diffs": {
+        "priceEur": {
+          "from": 12.99,
+          "to": 14.99
+        }
+      }
+    }
+  ]
 }
