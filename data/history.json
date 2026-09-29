@@ -1,5 +1,22 @@
 [
   {
+    "timestamp": "2026-09-29T13:37:49.838Z",
+    "planCount": 18,
+    "summary": {
+      "added": 0,
+      "removed": 2,
+      "changed": 0
+    },
+    "carrierPrices": {
+      "vodafone": 17.5,
+      "three": 14,
+      "skymobile": 10,
+      "tescomobile": 10,
+      "virginmedia": 9.99,
+      "eir": 9.99
+    }
+  },
+  {
     "timestamp": "2026-09-22T12:16:10.642Z",
     "planCount": 19,
     "summary": {
@@ -1473,15 +1490,6 @@
     "summary": {
       "added": 20,
       "removed": 23,
-      "changed": 0
-    }
-  },
-  {
-    "timestamp": "2026-05-28T08:46:10.820Z",
-    "planCount": 31,
-    "summary": {
-      "added": 23,
-      "removed": 0,
       "changed": 0
     }
   }
