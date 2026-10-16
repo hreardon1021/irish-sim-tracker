@@ -1,46 +1,59 @@
 {
-  "timestamp": "2026-10-06T13:50:39.605Z",
+  "timestamp": "2026-10-16T12:03:08.910Z",
   "hasChanges": true,
   "summary": {
     "added": 0,
-    "removed": 0,
-    "changed": 1
+    "removed": 2,
+    "changed": 0
   },
   "added": [],
-  "removed": [],
-  "changed": [
+  "removed": [
     {
-      "plan": {
-        "carrier": "gomo",
-        "carrierDisplay": "GoMo",
-        "name": "GoMo Mobile",
-        "priceEur": 12.99,
-        "promoPrice": null,
-        "promoNote": "Price for life",
-        "dataGB": 23,
-        "dataDisplay": "23GB",
-        "minutes": "Unlimited",
-        "sms": "Unlimited",
-        "is5G": true,
-        "isUnlimited": false,
-        "roaming": "EU roaming included",
-        "contractType": "30-day rolling",
-        "extras": [
-          "5G"
-        ],
-        "url": "https://shop.gomo.ie/mobile-sim-only",
-        "network": "Three",
-        "hasPromo": false,
-        "freeMonth": false,
-        "forLife": true,
-        "unlimitedCalls": false
-      },
-      "diffs": {
-        "priceEur": {
-          "from": 14.99,
-          "to": 12.99
-        }
-      }
+      "carrier": "skymobile",
+      "carrierDisplay": "Sky Mobile",
+      "name": "Unlimited Plan",
+      "priceEur": 15,
+      "promoPrice": null,
+      "promoNote": null,
+      "dataGB": 0,
+      "dataDisplay": "Unknown",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": false,
+      "isUnlimited": false,
+      "roaming": "No roaming",
+      "contractType": "12-month",
+      "extras": [],
+      "url": "https://www.sky.com/ie/shop/mobile/plans/",
+      "network": "Vodafone",
+      "hasPromo": false,
+      "freeMonth": false,
+      "forLife": false,
+      "unlimitedCalls": false
+    },
+    {
+      "carrier": "skymobile",
+      "carrierDisplay": "Sky Mobile",
+      "name": "10GB Plan",
+      "priceEur": 10,
+      "promoPrice": null,
+      "promoNote": null,
+      "dataGB": 10,
+      "dataDisplay": "10GB",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": false,
+      "isUnlimited": false,
+      "roaming": "No roaming",
+      "contractType": "12-month",
+      "extras": [],
+      "url": "https://www.sky.com/ie/shop/mobile/plans/",
+      "network": "Vodafone",
+      "hasPromo": false,
+      "freeMonth": false,
+      "forLife": false,
+      "unlimitedCalls": false
     }
-  ]
+  ],
+  "changed": []
 }
