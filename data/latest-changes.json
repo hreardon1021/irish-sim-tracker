@@ -1,13 +1,37 @@
 {
-  "timestamp": "2026-10-16T12:03:08.910Z",
+  "timestamp": "2026-10-17T11:19:16.894Z",
   "hasChanges": true,
   "summary": {
-    "added": 0,
-    "removed": 2,
+    "added": 3,
+    "removed": 1,
     "changed": 0
   },
-  "added": [],
-  "removed": [
+  "added": [
+    {
+      "carrier": "three",
+      "carrierDisplay": "Three",
+      "name": "A SIM only deal to get your claws into",
+      "priceEur": 34.99,
+      "promoPrice": 14,
+      "promoNote": "for 6 months",
+      "dataGB": 9999,
+      "dataDisplay": "Unlimited",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": true,
+      "isUnlimited": true,
+      "roaming": "No roaming",
+      "contractType": "24-month",
+      "extras": [
+        "5G"
+      ],
+      "url": "https://www.three.ie/deals/sim-only.html",
+      "network": "Three",
+      "hasPromo": true,
+      "freeMonth": false,
+      "forLife": false,
+      "unlimitedCalls": true
+    },
     {
       "carrier": "skymobile",
       "carrierDisplay": "Sky Mobile",
@@ -52,6 +76,33 @@
       "hasPromo": false,
       "freeMonth": false,
       "forLife": false,
+      "unlimitedCalls": false
+    }
+  ],
+  "removed": [
+    {
+      "carrier": "gomo",
+      "carrierDisplay": "GoMo",
+      "name": "GoMo Mobile",
+      "priceEur": 12.99,
+      "promoPrice": null,
+      "promoNote": "Price for life",
+      "dataGB": 23,
+      "dataDisplay": "23GB",
+      "minutes": "Unlimited",
+      "sms": "Unlimited",
+      "is5G": true,
+      "isUnlimited": false,
+      "roaming": "EU roaming included",
+      "contractType": "30-day rolling",
+      "extras": [
+        "5G"
+      ],
+      "url": "https://shop.gomo.ie/mobile-sim-only",
+      "network": "Three",
+      "hasPromo": false,
+      "freeMonth": false,
+      "forLife": true,
       "unlimitedCalls": false
     }
   ],
