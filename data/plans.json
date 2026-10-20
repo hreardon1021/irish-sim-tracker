@@ -196,6 +196,31 @@
     "unlimitedCalls": true
   },
   {
+    "carrier": "gomo",
+    "carrierDisplay": "GoMo",
+    "name": "GoMo Mobile",
+    "priceEur": 12.99,
+    "promoPrice": null,
+    "promoNote": "Price for life",
+    "dataGB": 23,
+    "dataDisplay": "23GB",
+    "minutes": "Unlimited",
+    "sms": "Unlimited",
+    "is5G": true,
+    "isUnlimited": false,
+    "roaming": "EU roaming included",
+    "contractType": "30-day rolling",
+    "extras": [
+      "5G"
+    ],
+    "url": "https://shop.gomo.ie/mobile-sim-only",
+    "network": "Three",
+    "hasPromo": false,
+    "freeMonth": false,
+    "forLife": true,
+    "unlimitedCalls": false
+  },
+  {
     "carrier": "skymobile",
     "carrierDisplay": "Sky Mobile",
     "name": "Unlimited Plan",
@@ -255,7 +280,7 @@
     "is5G": true,
     "isUnlimited": true,
     "roaming": "EU roaming included",
-    "contractType": "12-month",
+    "contractType": "24-month",
     "extras": [
       "5G"
     ],
@@ -269,10 +294,10 @@
   {
     "carrier": "tescomobile",
     "carrierDisplay": "Tesco Mobile",
-    "name": "5G Clubcard SIM",
+    "name": "Was",
     "priceEur": 20,
-    "promoPrice": null,
-    "promoNote": null,
+    "promoPrice": 10,
+    "promoNote": "for 24 months",
     "dataGB": 95,
     "dataDisplay": "95GB",
     "minutes": "Unlimited",
@@ -280,13 +305,13 @@
     "is5G": true,
     "isUnlimited": false,
     "roaming": "EU roaming included",
-    "contractType": "30-day rolling",
+    "contractType": "24-month",
     "extras": [
       "5G"
     ],
     "url": "https://www.tescomobile.ie/sim-only-plans",
     "network": "Three",
-    "hasPromo": false,
+    "hasPromo": true,
     "freeMonth": false,
     "forLife": false,
     "unlimitedCalls": false
